@@ -70,7 +70,7 @@ export const PACOTES = [
  */
 export const PACOTE_PERSONALIZADO = {
   id: 'personalizado',
-  nome: 'Plano personalizado',
+  nome: 'Plano Personalizado',
   promessa: 'Você diz o que precisa. Eu monto em cima disso.',
 }
 

@@ -39,7 +39,7 @@ describe('montarMensagemPedido', () => {
 
   it('nomeia o plano personalizado em vez de dizer que nada foi escolhido', () => {
     const mensagem = montarMensagemPedido({ ...pedidoCompleto, pacote: 'personalizado' })
-    expect(mensagem).toContain('Plano personalizado')
+    expect(mensagem).toContain('Plano Personalizado')
     expect(mensagem).not.toContain('ainda não escolhido')
     expect(mensagem).not.toContain('a partir de')
   })

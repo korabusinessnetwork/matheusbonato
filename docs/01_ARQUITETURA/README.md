@@ -1,4 +1,4 @@
-# 01 — ARQUITETURA
+# 01, ARQUITETURA
 
 ## Visão geral
 
@@ -20,7 +20,7 @@ Visitante (navegador)
    └─ https://wa.me/<numero>?text=<mensagem>   (aplicativo do próprio visitante)
 ```
 
-Modelo escolhido: **A adaptado** (SPA sem BaaS) — ver ADR-001 e ADR-003.
+Modelo escolhido: **A adaptado** (SPA sem BaaS), ver ADR-001 e ADR-003.
 
 ## Camadas
 
@@ -37,7 +37,7 @@ Modelo escolhido: **A adaptado** (SPA sem BaaS) — ver ADR-001 e ADR-003.
 
 Porque o destino do pedido vai mudar. Hoje é `wa.me`; amanhã pode ser Supabase,
 e-mail ou CRM. Com `lib/whatsapp.js` isolando isso, a troca não toca em nenhum
-componente — é a mesma regra que torna a migração Modelo A → B barata.
+componente, é a mesma regra que torna a migração Modelo A → B barata.
 
 ## Fluxo de dados do pedido
 
@@ -51,9 +51,9 @@ componente — é a mesma regra que torna a migração Modelo A → B barata.
 ## Estado
 
 - **Servidor**: não existe.
-- **Global de UI**: nenhum Context — a árvore é rasa; `App` passa o pedido para
+- **Global de UI**: nenhum Context, a árvore é rasa; `App` passa o pedido para
   os dois filhos que precisam. Elevar mais seria complexidade sem consumidor.
-- **Local**: menu aberto, seção ativa, reveal — cada um no seu componente.
+- **Local**: menu aberto, seção ativa, reveal, cada um no seu componente.
 
 ## Build e deploy
 

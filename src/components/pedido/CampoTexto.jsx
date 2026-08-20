@@ -1,8 +1,8 @@
 import './CampoTexto.css'
 
 /**
- * Campo de texto (linha ou área). O erro mora colado no campo — nunca num
- * alerta genérico no topo — e some assim que a pessoa começa a corrigir.
+ * Campo de texto (linha ou área). O erro mora colado no campo, nunca num
+ * alerta genérico no topo, e some assim que a pessoa começa a corrigir.
  */
 export function CampoTexto({
   nome,

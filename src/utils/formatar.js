@@ -1,5 +1,5 @@
 /*
- * Funções puras de formatação. Sem React, sem DOM, sem efeito colateral —
+ * Funções puras de formatação. Sem React, sem DOM, sem efeito colateral,
  * por isso nascem com teste (ver formatar.test.js).
  */
 
@@ -42,7 +42,7 @@ export function limitar(texto, maximo) {
   return `${(ultimoEspaco > maximo * 0.6 ? corte.slice(0, ultimoEspaco) : corte).trimEnd()}…`
 }
 
-/** Colapsa espaços e quebras de linha repetidas — mensagem de WhatsApp limpa. */
+/** Colapsa espaços e quebras de linha repetidas, mensagem de WhatsApp limpa. */
 export function normalizarEspacos(texto) {
   return String(texto ?? '')
     .replace(/[ \t]+/g, ' ')

@@ -1,4 +1,4 @@
-# Restrições Permanentes — prioridade máxima
+# Restrições Permanentes, prioridade máxima
 
 ## Objetivo
 Registrar os limites que NÃO se negociam neste projeto: técnicos, legais, de
@@ -19,7 +19,7 @@ antes de qualquer decisão de produto, arquitetura ou copy.
 - Só o dono cria ou remove restrição, e a remoção exige ADR.
 
 ## Exceções
-- Documentadas caso a caso, com prazo — nunca em aberto.
+- Documentadas caso a caso, com prazo, nunca em aberto.
 
 ## Auditoria
 - Data de criação e motivo.
@@ -33,15 +33,15 @@ antes de qualquer decisão de produto, arquitetura ou copy.
 - **Sem backend, sem banco.** Enquanto o ADR-003 valer, a página é estática. Nada
   de rota de API, servidor ou armazenamento de dado do visitante.
 - **Sem dependência nova sem motivo forte.** Hoje: React + Vite + Vitest. Qualquer
-  lib a mais precisa justificar peso no bundle — a LP compete por segundo no 4G.
+  lib a mais precisa justificar peso no bundle, a LP compete por segundo no 4G.
 - **Sem template/construtor.** É o diferencial vendido na própria página; usar
   template aqui seria contradizer a oferta.
-- **Versão de dependência fixada** (sem `^`/`latest`) — build reproduzível.
+- **Versão de dependência fixada** (sem `^`/`latest`), build reproduzível.
 
 ## Legais (LGPD)
 - **Nenhum dado do visitante é armazenado.** O formulário monta uma mensagem no
   aparelho da própria pessoa e abre o WhatsApp. Não há coleta, banco, cookie de
-  rastreio ou lista de e-mail — e a página diz isso explicitamente no rodapé.
+  rastreio ou lista de e-mail, e a página diz isso explicitamente no rodapé.
 - Se um dia entrar persistência (Supabase/e-mail), passa a ser obrigatório:
   aviso de privacidade, base legal, e direito de exclusão. Isso vira ADR.
 - Nenhum dado pessoal em log, em URL de analytics ou em mensagem de erro.
@@ -49,7 +49,7 @@ antes de qualquer decisão de produto, arquitetura ou copy.
 ## De custo (fase bootstrap)
 - **Tudo em tier gratuito.** Vercel free, GitHub free, Google Fonts, sem serviço pago.
 - Qualquer item pago é **adiado por padrão**. Ao esbarrar em um, apresentar:
-  custo aproximado, alternativa gratuita, impacto e recomendação — o dono decide.
+  custo aproximado, alternativa gratuita, impacto e recomendação, o dono decide.
 - Domínio é a única despesa esperada, e é decisão do dono.
 
 ## De produto

@@ -46,7 +46,7 @@ export function Rodape() {
 
         <p className="rodape__lgpd">
           Esta página não guarda seus dados. O que você digita no formulário vira uma
-          mensagem no seu próprio WhatsApp — nada é enviado para servidor, banco de dados
+          mensagem no seu próprio WhatsApp, nada é enviado para servidor, banco de dados
           ou lista de e-mail.
         </p>
       </div>

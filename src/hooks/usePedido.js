@@ -13,7 +13,7 @@ const PEDIDO_VAZIO = {
   prazo: '',
   orcamento: '',
   contexto: '',
-  sobrenome: '', // armadilha anti-robô — fica escondida no formulário
+  sobrenome: '', // armadilha anti-robô, fica escondida no formulário
 }
 
 /**
@@ -21,7 +21,7 @@ const PEDIDO_VAZIO = {
  *
  * Duas regras de UX que valem mais que qualquer validação bonita:
  * 1. O erro de um campo some assim que a pessoa começa a corrigir aquele campo.
- * 2. Nada é validado antes da primeira tentativa de envio — ninguém gosta de
+ * 2. Nada é validado antes da primeira tentativa de envio, ninguém gosta de
  *    ver "campo obrigatório" em vermelho antes de ter tido a chance de digitar.
  */
 export function usePedido() {
@@ -53,7 +53,7 @@ export function usePedido() {
 
   /**
    * Roda no clique do botão final. Devolve `true` quando o pedido pode seguir
-   * para o WhatsApp — quem decide abrir o link é o componente, para que o
+   * para o WhatsApp, quem decide abrir o link é o componente, para que o
    * clique continue sendo um gesto do usuário (senão o navegador bloqueia).
    */
   const revisar = useCallback(() => {

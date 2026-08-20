@@ -45,7 +45,7 @@
   color: rgba(244, 241, 234, 0.6);
 }
 
-/* O fio que fecha a linha da etiqueta — assinatura do layout suíço. */
+/* O fio que fecha a linha da etiqueta, assinatura do layout suíço. */
 .secao__topo::after {
   content: '';
   flex: 1;

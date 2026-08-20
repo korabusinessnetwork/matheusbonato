@@ -1,7 +1,7 @@
 # Bugs Conhecidos
 
 ## Objetivo
-Registrar bug conhecido, severidade, workaround e status — para que ninguém
+Registrar bug conhecido, severidade, workaround e status, para que ninguém
 "descubra" duas vezes o mesmo problema.
 
 ## Contexto
@@ -35,6 +35,6 @@ Nenhum bug aberto.
   ADR-003 (sem banco). Reavaliar quando o volume justificar.
 - **O acordeão de dúvidas usa `<details name>`** para abrir uma pergunta por vez.
   Em navegador antigo que não suporta o atributo, várias ficam abertas ao mesmo
-  tempo — degradação aceitável, nada quebra.
+  tempo, degradação aceitável, nada quebra.
 - **Sem página `/obrigado`.** Como o envio sai da página (vai para o WhatsApp),
   a conversão final ainda não é medível. Previsto na Fase 3 do roadmap.

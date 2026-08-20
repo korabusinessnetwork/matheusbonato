@@ -1,6 +1,6 @@
 # Camada de serviços
 
-**Todo acesso ao mundo externo passa por aqui — nunca de dentro de um componente.**
+**Todo acesso ao mundo externo passa por aqui, nunca de dentro de um componente.**
 
 Este projeto não tem backend (ADR-003). O "backend" do pedido é o próprio
 WhatsApp. Mesmo assim a fronteira existe, e é ela que torna barata a troca do

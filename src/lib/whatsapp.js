@@ -1,9 +1,9 @@
 /*
- * CAMADA DE SERVIÇOS — a única fronteira entre a página e o mundo externo.
+ * CAMADA DE SERVIÇOS, a única fronteira entre a página e o mundo externo.
  * Hoje o "backend" do pedido é o WhatsApp. Se um dia virar Supabase, e-mail ou
  * CRM, muda só este arquivo: nenhum componente sabe como o pedido viaja.
  *
- * Tudo aqui é função pura (entra objeto, sai string) — testado em whatsapp.test.js.
+ * Tudo aqui é função pura (entra objeto, sai string), testado em whatsapp.test.js.
  */
 
 import { PACOTES, OBJETIVOS, PRAZOS, ORCAMENTOS, formatarPreco } from '../constants/pacotes.js'
@@ -24,7 +24,7 @@ function rotuloPacote(id) {
 }
 
 /**
- * Monta a mensagem que a pessoa vai enviar. Escrita na PRIMEIRA pessoa dela —
+ * Monta a mensagem que a pessoa vai enviar. Escrita na PRIMEIRA pessoa dela,
  * quem envia é o cliente, então o texto precisa soar como o cliente falando.
  */
 export function montarMensagemPedido(pedido = {}) {
@@ -57,7 +57,7 @@ export function montarMensagemPedido(pedido = {}) {
 
 /**
  * URL final do WhatsApp. `encodeURIComponent` é o que garante que quebra de
- * linha, acento e asterisco cheguem intactos — e é também o que impede
+ * linha, acento e asterisco cheguem intactos, e é também o que impede
  * qualquer texto digitado de virar outra coisa dentro da URL.
  */
 export function montarUrlWhatsApp(numero, mensagem) {

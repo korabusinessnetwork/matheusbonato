@@ -3,7 +3,7 @@ import './GrupoOpcoes.css'
 /**
  * Escolha única desenhada como etiquetas clicáveis.
  * Por baixo são `input[type=radio]` de verdade: teclado, leitor de tela e
- * autopreenchimento continuam funcionando — o visual é só CSS por cima.
+ * autopreenchimento continuam funcionando, o visual é só CSS por cima.
  */
 export function GrupoOpcoes({ nome, rotulo, opcoes, valor, aoMudar, erro, obrigatorio = false }) {
   const idErro = `campo-${nome}-erro`

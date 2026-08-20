@@ -1,4 +1,4 @@
-# 10 — PROMPTS · [NÃO SE APLICA NESTA FASE]
+# 10, PROMPTS · [NÃO SE APLICA NESTA FASE]
 
 Este produto **não usa IA em produção**. Não há agente, geração de texto em tempo
 de execução, extração de documento ou camada orientada a eventos. A página é
@@ -15,7 +15,7 @@ esquecida.
 
 ## Quando esta pasta volta a valer
 
-Se alguma das ideias do backlog envolver IA — por exemplo, um pré-diagnóstico
+Se alguma das ideias do backlog envolver IA, por exemplo, um pré-diagnóstico
 automático antes do formulário. Nesse caso: ADR de arquitetura de IA, regra de
 "não inventa número", transparência para o usuário (ele sabe que fala com IA) e
 os prompts versionados aqui.

@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 /**
  * Revela um bloco quando ele entra na tela.
  * Degrada para "sempre visível" se o navegador não tem IntersectionObserver
- * ou se a pessoa pediu menos movimento — conteúdo nunca fica escondido por
+ * ou se a pessoa pediu menos movimento, conteúdo nunca fica escondido por
  * causa de animação que não rodou.
  */
 export function useRevelarAoScroll({ margem = '0px 0px -10% 0px', umaVez = true } = {}) {

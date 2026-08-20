@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Landing page de conversão de Matheus Bonato — sites e landing pages que viram pedido no WhatsApp.",
+  "description": "Landing page de conversão de Matheus Bonato, sites e landing pages que viram pedido no WhatsApp.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

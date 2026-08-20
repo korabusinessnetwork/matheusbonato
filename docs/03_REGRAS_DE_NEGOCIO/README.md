@@ -1,4 +1,4 @@
-# 03 — REGRAS DE NEGÓCIO
+# 03, REGRAS DE NEGÓCIO
 
 ## RN-01 · Ordem das seções é estratégia, não estética
 
@@ -11,7 +11,7 @@ Mudar a ordem muda a taxa de conversão. Não se altera sem motivo declarado.
 
 ## RN-02 · Nenhuma seção é beco sem saída
 
-Toda seção leva de volta ao pedido — direta (botão, barra fixa no celular) ou
+Toda seção leva de volta ao pedido, direta (botão, barra fixa no celular) ou
 indiretamente (o cardápio pré-preenche o formulário).
 
 ## RN-03 · Escolher no cardápio preenche o pedido
@@ -31,12 +31,12 @@ Cada campo obrigatório a mais derruba a taxa de conclusão.
 
 Nada é marcado como erro antes do primeiro clique em enviar. Depois disso, o erro
 de um campo some assim que a pessoa começa a corrigir **aquele** campo.
-O erro mora colado ao campo — nunca em alerta genérico no topo.
+O erro mora colado ao campo, nunca em alerta genérico no topo.
 
 ## RN-06 · Telefone brasileiro
 
 Máscara aplicada durante a digitação; aceita 10 dígitos (fixo) e 11 (celular).
-Na hora de montar o link, assume DDI 55 quando não veio — o público é Brasil.
+Na hora de montar o link, assume DDI 55 quando não veio, o público é Brasil.
 Digitação parcial nunca é bloqueada.
 
 ## RN-07 · A mensagem é escrita na voz do cliente
@@ -48,7 +48,7 @@ linha vazia na mensagem: simplesmente não aparecem.
 ## RN-08 · Contexto tem teto de 1000 caracteres
 
 Protege o comprimento da URL `wa.me` e mantém a mensagem legível. O corte
-acontece na palavra, com reticências — nunca no meio de uma sílaba.
+acontece na palavra, com reticências, nunca no meio de uma sílaba.
 
 ## RN-09 · Preço é sempre "a partir de"
 

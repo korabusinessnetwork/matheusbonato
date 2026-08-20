@@ -1,4 +1,4 @@
-# 11 — SEGURANÇA
+# 11, SEGURANÇA
 
 > Segurança é definition-of-done, não fase final. Este plano é o gate antes de
 > cada publicação. Base: guia da fundação, adaptado a um site **estático, sem
@@ -25,17 +25,17 @@ projeto é arquitetural: **não existe dado do visitante para vazar**, porque na
 
 ## Cabeçalhos em produção (`vercel.json`)
 
-- `Content-Security-Policy` — `default-src 'self'`; script só da própria origem;
+- `Content-Security-Policy`, `default-src 'self'`; script só da própria origem;
   estilo e fonte liberados apenas para `fonts.googleapis.com` / `fonts.gstatic.com`;
   `frame-ancestors 'none'`; `base-uri 'self'`; `form-action 'self'`.
 - `X-Content-Type-Options: nosniff` · `X-Frame-Options: DENY`
 - `Referrer-Policy: strict-origin-when-cross-origin`
-- `Permissions-Policy` — geolocalização, microfone e câmera negados.
+- `Permissions-Policy`, geolocalização, microfone e câmera negados.
 
 ## Checklist de release (rodar antes de cada publicação)
 
 ### Segredos e configuração
-- [ ] Nenhuma chave, token ou senha no código — hoje: nenhuma existe
+- [ ] Nenhuma chave, token ou senha no código, hoje: nenhuma existe
 - [ ] `.env` fora do versionamento; `.env.example` só com nomes de variável
 - [ ] `VITE_WHATSAPP_NUMERO` apontando para o número real (não o de exemplo)
 
@@ -58,7 +58,7 @@ projeto é arquitetural: **não existe dado do visitante para vazar**, porque na
 - [ ] `npm run validar` (testes + build) passando
 - [ ] Cabeçalhos de segurança conferidos após o deploy
 
-## LGPD — situação atual
+## LGPD, situação atual
 
 Não há tratamento de dado pessoal pelo controlador: a página **redige** uma
 mensagem que a própria pessoa envia do seu aparelho. Não há coleta, retenção,
@@ -66,7 +66,7 @@ compartilhamento nem base legal a declarar.
 
 **Isso muda no dia em que o lead for persistido** (decisão em aberto). Nesse dia
 passam a ser obrigatórios: base legal, aviso de privacidade, política de
-retenção, direito de exportação e exclusão — e ADR superseding o ADR-003.
+retenção, direito de exportação e exclusão, e ADR superseding o ADR-003.
 
 ## Custo
 
@@ -76,8 +76,8 @@ serviço pago (`memory/restrictions.md`).
 
 ## Resposta a incidente (mínimo viável)
 
-1. **Detectar** — registrar em `memory/bugs.md` com severidade.
-2. **Conter** — reverter o deploy na Vercel (build anterior continua disponível).
-3. **Corrigir** — patch + teste que prova a correção.
-4. **Registrar** — post-mortem curto em `memory/learnings.md`.
-5. **Prevenir** — o aprendizado vira restrição ou padrão.
+1. **Detectar**, registrar em `memory/bugs.md` com severidade.
+2. **Conter**, reverter o deploy na Vercel (build anterior continua disponível).
+3. **Corrigir**, patch + teste que prova a correção.
+4. **Registrar**, post-mortem curto em `memory/learnings.md`.
+5. **Prevenir**, o aprendizado vira restrição ou padrão.

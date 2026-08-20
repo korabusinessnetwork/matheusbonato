@@ -30,7 +30,7 @@
 }
 
 /* Título e subtítulo dividem a linha no desktop: o olho lê a promessa,
-   depois desce pro detalhe — sem precisar rolar. */
+   depois desce pro detalhe, sem precisar rolar. */
 .hero__base {
   display: grid;
   gap: var(--e-6);

@@ -1,4 +1,4 @@
-# ADR-003 — Pedido vai direto ao WhatsApp, sem banco de dados
+# ADR-003, Pedido vai direto ao WhatsApp, sem banco de dados
 
 **Status**: Aceito
 **Data**: 2026-08-20
@@ -8,7 +8,7 @@
 
 ## Contexto
 
-A página precisa receber pedidos. O público-alvo já negocia por WhatsApp — é lá
+A página precisa receber pedidos. O público-alvo já negocia por WhatsApp, é lá
 que a venda fecha, e é lá que o dono já está o dia inteiro. A pergunta era onde
 o pedido deveria cair: banco de dados, e-mail, ou direto na conversa.
 
@@ -22,7 +22,7 @@ Restrições:
 
 O formulário monta a mensagem **no aparelho da própria pessoa** e o botão final é
 um link `https://wa.me/<numero>?text=<mensagem>` já preenchido. **Nada é enviado
-para servidor, banco ou lista.** A página não coleta — ela redige.
+para servidor, banco ou lista.** A página não coleta, ela redige.
 
 A montagem fica isolada em `src/lib/whatsapp.js` (camada de serviços): nenhum
 componente sabe como o pedido viaja.
@@ -32,7 +32,7 @@ componente sabe como o pedido viaja.
 ### 1. WhatsApp + Supabase
 - **Prós**: nenhum lead se perde; painel de pedidos possível; base para CRM.
 - **Contras**: conta a mais, variáveis de ambiente, RLS para acertar, e dado
-  pessoal armazenado — LGPD passa a valer de verdade.
+  pessoal armazenado, LGPD passa a valer de verdade.
 - **Descartado porque**: no volume atual, o custo de operação e a superfície
   legal superam o ganho. Fica registrado em `memory/decisions.md` como decisão
   em aberto, para revisitar quando o volume justificar.
@@ -46,7 +46,7 @@ componente sabe como o pedido viaja.
 ### 3. Só um botão "chamar no WhatsApp", sem formulário
 - **Prós**: atrito zero.
 - **Contras**: o lead chega frio ("oi, quanto custa?") e o dono gasta 20
-  mensagens para qualificar — exatamente a dor descrita na página.
+  mensagens para qualificar, exatamente a dor descrita na página.
 - **Descartado porque**: a qualificação é parte do valor entregue.
 
 ## Consequências
@@ -63,10 +63,10 @@ componente sabe como o pedido viaja.
   e está registrado em `memory/bugs.md` como limitação conhecida.
 - A conversão final acontece fora da página, então ainda não é medível
   (previsto na Fase 3: `/obrigado` + evento).
-- Depende do WhatsApp instalado/acessível no dispositivo — mitigado pelo link de
+- Depende do WhatsApp instalado/acessível no dispositivo, mitigado pelo link de
   fallback ("se não abriu, toque aqui") exibido após o clique.
 
 ## Referências
 - `src/lib/whatsapp.js` e `src/lib/whatsapp.test.js`
-- `docs/07_APIS/README.md` — o contrato do link `wa.me`
-- `memory/restrictions.md` — restrições legais e de custo
+- `docs/07_APIS/README.md`, o contrato do link `wa.me`
+- `memory/restrictions.md`, restrições legais e de custo

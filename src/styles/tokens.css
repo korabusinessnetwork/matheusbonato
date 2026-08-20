@@ -1,5 +1,5 @@
 /*
- * Design tokens — fonte única de verdade visual.
+ * Design tokens, fonte única de verdade visual.
  * Nenhum componente escreve hex, px de fonte ou duração de animação direto:
  * tudo sai daqui. Trocar a marca inteira = trocar este arquivo.
  * Documentado em docs/02_DESIGN_SYSTEM/.
@@ -15,7 +15,7 @@
   --cor-tinta-45: rgba(20, 20, 15, 0.45); /* texto de apoio, legendas */
   --cor-tinta-20: rgba(20, 20, 15, 0.2); /* bordas de campo */
   --cor-tinta-12: rgba(20, 20, 15, 0.12); /* fios do grid (hairlines) */
-  --cor-acento: #c63a17; /* vermelhão de tinta — só para o que converte */
+  --cor-acento: #c63a17; /* vermelhão de tinta, só para o que converte */
   --cor-acento-escuro: #a02f12;
   --cor-acento-10: rgba(198, 58, 23, 0.1);
   --cor-erro: #a02f12;

@@ -1,4 +1,4 @@
-# Padrões — "como fazemos aqui"
+# Padrões, "como fazemos aqui"
 
 ## Objetivo
 Consolidar os padrões de código e de conteúdo já validados neste projeto, para
@@ -6,7 +6,7 @@ que agentes e devs novos não reinventem (nem contradigam) o que já funciona.
 
 ## Contexto
 Padrão não escrito é padrão que se perde entre sessões. Cada item aqui foi usado
-de verdade no código — não é aspiração.
+de verdade no código, não é aspiração.
 
 ## Regras Gerais
 - Padrão nasce do código, não do desejo. Se não está implementado, é proposta.
@@ -40,12 +40,12 @@ Aplicado em: todos os componentes de seção.
 
 **Marcador `>>> TODO MATHEUS` e `[CONFIRMAR]`.**
 Todo dado que é fato sobre o dono (número, ano, preço, case) fica marcado assim.
-Regra: nunca preencher com fato inventado — melhor um marcador honesto.
+Regra: nunca preencher com fato inventado, melhor um marcador honesto.
 
 ## Código
 
 **Um componente por seção, com CSS de mesmo nome ao lado.**
-`components/<secao>/<Secao>.jsx` + `<Secao>.css`. Estilo nunca dentro do JSX —
+`components/<secao>/<Secao>.jsx` + `<Secao>.css`. Estilo nunca dentro do JSX,
 é o que permite trocar tema/marca sem tocar na marcação.
 
 **Camada de serviços obrigatória (`src/lib/`).**
@@ -76,7 +76,7 @@ corrigir aquele campo. Nada é validado antes da primeira tentativa de envio.
 Nada de `<div>` clicável.
 
 **Gesto do usuário abre o WhatsApp.** O botão final é um `<a href>` de verdade
-com o link já montado — se fosse `window.open` em callback, bloqueador de pop-up
+com o link já montado, se fosse `window.open` em callback, bloqueador de pop-up
 mataria a conversão.
 
 **Alvo de toque mínimo de 44px** em qualquer controle tocável no celular.

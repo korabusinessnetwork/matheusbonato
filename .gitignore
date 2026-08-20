@@ -8,7 +8,7 @@ dist/
 dist-ssr/
 *.local
 
-# Ambiente — NUNCA commitar (só o .env.example é versionado)
+# Ambiente, NUNCA commitar (só o .env.example é versionado)
 .env
 .env.*
 !.env.example

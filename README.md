@@ -3,14 +3,14 @@
 Landing page de conversão. Uma página, um objetivo: transformar visita em **pedido
 qualificado no WhatsApp**, com pacote, prazo, orçamento e contexto já escritos.
 
-Feita em React + Vite, estática, sem backend e sem banco — o pedido é montado no
+Feita em React + Vite, estática, sem backend e sem banco, o pedido é montado no
 aparelho do próprio visitante e vira uma conversa no WhatsApp.
 
 ---
 
 ## Comece por aqui (3 coisas antes de publicar)
 
-### 1. Seu número de WhatsApp — obrigatório
+### 1. Seu número de WhatsApp, obrigatório
 
 ```bash
 cp .env.example .env
@@ -23,7 +23,7 @@ VITE_WHATSAPP_NUMERO=5544999998888
 ```
 
 > `55` = Brasil, `44` = DDD, o resto é o número. Enquanto estiver o número de
-> exemplo, o botão abre uma conversa vazia — em desenvolvimento a página avisa.
+> exemplo, o botão abre uma conversa vazia, em desenvolvimento a página avisa.
 
 ### 2. Seus preços
 
@@ -35,7 +35,7 @@ de mercado**, não uma decisão sua. Ajuste antes de publicar.
 Abra `src/constants/conteudo.js` e procure por `[CONFIRMAR]`: são os anos e os
 marcos da sua trajetória. Troque pelos reais.
 
-Procure também por `>>> TODO MATHEUS` em todo o projeto — são os pontos que só
+Procure também por `>>> TODO MATHEUS` em todo o projeto, são os pontos que só
 você pode preencher.
 
 ---
@@ -52,7 +52,7 @@ você pode preencher.
 | Ordem das seções na página | `src/App.jsx` |
 
 **Você não precisa abrir nenhum componente para reescrever a página inteira.**
-Isso é proposital — está registrado no ADR-002.
+Isso é proposital, está registrado no ADR-002.
 
 ## Rodar
 
@@ -68,7 +68,7 @@ npm run validar   # testes + build (rode antes de todo commit)
 | `npm test` | 31 testes das funções puras |
 | `npm run build` | Build de produção em `dist/` |
 | `npm run preview` | Serve o build local |
-| `npm run validar` | `test` + `build` — o gate antes de publicar |
+| `npm run validar` | `test` + `build`, o gate antes de publicar |
 
 ## Publicar (Vercel, gratuito)
 
@@ -106,9 +106,9 @@ Depois: aponte seu domínio em **Settings → Domains** e troque as URLs de
 
 ## Documentação
 
-- `CLAUDE.md` — as regras de quem mexe no código
-- `docs/00_VISAO/` — o problema e a métrica que importa
-- `docs/03_REGRAS_DE_NEGOCIO/` — as 11 regras que governam a conversão
-- `docs/08_DECISOES/` — por que cada escolha estrutural foi feita
-- `docs/09_BACKLOG/` — o que falta, em ordem
-- `docs/11_SEGURANCA/` — checklist antes de cada publicação
+- `CLAUDE.md`, as regras de quem mexe no código
+- `docs/00_VISAO/`, o problema e a métrica que importa
+- `docs/03_REGRAS_DE_NEGOCIO/`, as 11 regras que governam a conversão
+- `docs/08_DECISOES/`, por que cada escolha estrutural foi feita
+- `docs/09_BACKLOG/`, o que falta, em ordem
+- `docs/11_SEGURANCA/`, checklist antes de cada publicação

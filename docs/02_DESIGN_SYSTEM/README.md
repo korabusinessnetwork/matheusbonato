@@ -1,4 +1,4 @@
-# 02 — DESIGN SYSTEM
+# 02, DESIGN SYSTEM
 
 > Fonte única de verdade visual. A implementação dos tokens está em
 > `src/styles/tokens.css`; este documento explica **por que** cada escolha existe.
@@ -7,7 +7,7 @@
 
 **Editorial suíço claro.** Grid rígido, muito respiro, fio de 1px como elemento
 estrutural, canto reto, seções numeradas (01, 02, 03…) como capítulos de revista.
-A página deve parecer feita por um estúdio de design — porque o produto vendido
+A página deve parecer feita por um estúdio de design, porque o produto vendido
 é justamente critério visual somado a engenharia.
 
 ## Cor
@@ -24,14 +24,14 @@ A página deve parecer feita por um estúdio de design — porque o produto vend
 nenhum. O vermelhão marca o caminho da conversão e nada mais.
 
 Contraste: tinta sobre papel ≈ 16:1; acento sobre papel ≈ 5.2:1 (usado em texto
-grande, número e traço — nunca em corpo pequeno). Ambos passam WCAG AA.
+grande, número e traço, nunca em corpo pequeno). Ambos passam WCAG AA.
 
 ## Tipografia
 
-- **Display**: `Instrument Serif` — títulos, números e preços.
+- **Display**: `Instrument Serif`, títulos, números e preços.
   Fallback real: `Iowan Old Style, Georgia, Times New Roman, serif`. A página foi
   verificada com a fonte externa bloqueada e continua legível e bem proporcionada.
-- **Texto**: `Inter` — corpo, rótulos, botões. Fallback: pilha de sistema.
+- **Texto**: `Inter`, corpo, rótulos, botões. Fallback: pilha de sistema.
 - **Escala fluida** (`clamp`): o mesmo token serve celular e desktop, sem
   breakpoint de tipografia.
 - Rótulo de campo e etiqueta de seção: versalete com `--letra-etiqueta` (0.14em).
@@ -44,7 +44,7 @@ Régua base de 8px (`--e-1` a `--e-10`). Respiro vertical de seção via
 ## Forma e movimento
 
 - Canto reto (`--raio-0`): é o padrão suíço; borda arredondada suavizaria demais.
-- Fios de 1px (`--fio`) separam tudo — não há sombra nem cartão flutuante.
+- Fios de 1px (`--fio`) separam tudo, não há sombra nem cartão flutuante.
 - Movimento: revelação no scroll (18px + fade, `--d-lenta` com ease de saída) e
   preenchimento do botão de baixo para cima. **`prefers-reduced-motion` zera
   todas as durações** e o conteúdo nunca depende de animação para aparecer.

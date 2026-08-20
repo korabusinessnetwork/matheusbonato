@@ -1,10 +1,10 @@
-# ADR-001 — React + Vite estático na Vercel, sem backend
+# ADR-001, React + Vite estático na Vercel, sem backend
 
 **Status**: Aceito
 **Data**: 2026-08-20
 **Decisores**: Matheus Bonato
-**Supersede**: —
-**Supersedido por**: —
+**Supersede**: nenhum
+**Supersedido por**: nenhum
 
 ---
 
@@ -16,14 +16,14 @@ pedido no WhatsApp, com o mínimo de atrito e o mínimo de custo de operação.
 
 Restrições que pesaram na decisão:
 - Custo: obrigatoriamente tier gratuito (`memory/restrictions.md`).
-- Velocidade: o tráfego vem de Instagram/WhatsApp, majoritariamente 4G — cada
+- Velocidade: o tráfego vem de Instagram/WhatsApp, majoritariamente 4G, cada
   quilobyte custa conversão.
 - Evolução prevista: a página deve poder virar portfólio, ganhar `/obrigado`,
   medição e, na Fase 4, ser reusada como template white-label vendável.
 - Operação: nenhum servidor para manter, atualizar ou pagar.
 
 O padrão default da fundação (Modelo A: SPA + Supabase) prevê BaaS. Aqui não há
-o que persistir hoje, então a camada de dados foi omitida — ver ADR-003.
+o que persistir hoje, então a camada de dados foi omitida, ver ADR-003.
 
 ## Decisão
 
@@ -50,7 +50,7 @@ design tokens centralizados. Testes com **Vitest** sobre as funções puras.
 ### 3. Modelo A completo (React + Vite + Supabase)
 - **Prós**: lead persistido, painel de pedidos possível.
 - **Contras**: conta a mais para manter, variáveis de ambiente, superfície de
-  segurança nova (RLS) e dado pessoal armazenado — LGPD entra em cena.
+  segurança nova (RLS) e dado pessoal armazenado, LGPD entra em cena.
 - **Descartado porque**: hoje não há o que persistir; ver ADR-003.
 
 ## Consequências
@@ -69,8 +69,8 @@ design tokens centralizados. Testes com **Vitest** sobre as funções puras.
 
 ## Referências
 - `docs/01_ARQUITETURA/README.md`
-- `memory/restrictions.md` — restrições de custo e de dependência
-- ADR-003 — pedido direto ao WhatsApp, sem banco
+- `memory/restrictions.md`, restrições de custo e de dependência
+- ADR-003, pedido direto ao WhatsApp, sem banco
 
 ## Notas de Implementação
 - Versões fixadas em `package.json` (sem `^`), build reproduzível.

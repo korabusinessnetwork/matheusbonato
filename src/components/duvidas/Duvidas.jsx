@@ -7,7 +7,7 @@ import './Duvidas.css'
  * Acordeão em <details>/<summary> nativo: abre sem JavaScript, é navegável por
  * teclado de graça e o conteúdo continua indexável pelo Google.
  * `name` deixa só uma pergunta aberta por vez nos navegadores que já suportam,
- * e degrada para "várias abertas" nos que não suportam — nada quebra.
+ * e degrada para "várias abertas" nos que não suportam, nada quebra.
  */
 export function Duvidas() {
   return (

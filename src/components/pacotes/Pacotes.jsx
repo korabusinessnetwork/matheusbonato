@@ -7,7 +7,7 @@ import './Pacotes.css'
 
 /**
  * O cardápio. Cada cartão é uma porta de entrada para o formulário: escolher
- * aqui já leva o pacote preenchido lá embaixo — a pessoa não digita duas vezes.
+ * aqui já leva o pacote preenchido lá embaixo, a pessoa não digita duas vezes.
  */
 export function Pacotes({ pacoteEscolhido, aoEscolher }) {
   return (
@@ -59,7 +59,7 @@ export function Pacotes({ pacoteEscolhido, aoEscolher }) {
                 onClick={() => aoEscolher(pacote.id)}
                 aria-label={`Escolher o pacote ${pacote.nome} e ir para o formulário de pedido`}
               >
-                {escolhido ? 'Escolhido — ir ao pedido' : 'Quero este'}
+                {escolhido ? 'Escolhido, ir ao pedido' : 'Quero este'}
               </Botao>
             </Revelar>
           )

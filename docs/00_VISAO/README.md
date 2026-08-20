@@ -1,4 +1,4 @@
-# 00 — VISÃO
+# 00, VISÃO
 
 ## Problema
 
@@ -6,7 +6,7 @@ Negócio pequeno no Brasil vende no WhatsApp e no Instagram, e quando finalmente
 faz um site, faz o site errado: um cartão de visita digital que conta a história
 da empresa em vez de resolver o problema de quem está lendo. O visitante chega,
 acha bonito, não entende em 5 segundos o que ali resolve a dor dele, não vê razão
-para confiar, não encontra próximo passo — e sai.
+para confiar, não encontra próximo passo, e sai.
 
 O mercado oferece dois extremos ruins:
 - **Agência**: cara, lenta (meses), entrega layout sem funil e some depois do "no ar".
@@ -19,7 +19,7 @@ não "site bonito": pedido com contexto, prazo e orçamento já escritos.
 
 ## Proposta de valor
 
-Uma pessoa só — que constrói sistemas de produção, não templates — projetando
+Uma pessoa só, que constrói sistemas de produção, não templates, projetando
 site e landing page como produto: estrutura de conversão, copy, prova, medição e
 um caminho único até o WhatsApp. No ar em dias, com prazo garantido em dinheiro.
 
@@ -35,7 +35,7 @@ um caminho único até o WhatsApp. No ar em dias, com prazo garantido em dinheir
 `pedidos enviados no WhatsApp ÷ visitantes únicos`.
 
 Métricas de apoio: taxa de rolagem até o cardápio, taxa de início de formulário,
-taxa de conclusão do formulário. Nenhuma delas é medida hoje — instrumentar é a
+taxa de conclusão do formulário. Nenhuma delas é medida hoje, instrumentar é a
 Fase 3 do roadmap (`memory/identity.md`).
 
 ## Escopo da Fase 1

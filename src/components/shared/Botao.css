@@ -28,7 +28,7 @@
     transform var(--d-rapida) var(--ease-padrao);
 }
 
-/* Preenchimento que sobe no hover — o "movimento" do botão sem sombra nem brilho. */
+/* Preenchimento que sobe no hover, o "movimento" do botão sem sombra nem brilho. */
 .botao::before {
   content: '';
   position: absolute;

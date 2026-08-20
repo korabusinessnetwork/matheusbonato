@@ -12,7 +12,7 @@ const NUMERO_EXEMPLO = '5544999998888'
 export const WHATSAPP_NUMERO =
   import.meta.env?.VITE_WHATSAPP_NUMERO?.replace(/\D/g, '') || NUMERO_EXEMPLO
 
-/** true enquanto o número real não foi configurado — a UI avisa em dev. */
+/** true enquanto o número real não foi configurado, a UI avisa em dev. */
 export const WHATSAPP_E_EXEMPLO = WHATSAPP_NUMERO === NUMERO_EXEMPLO
 
 export const MARCA = {
@@ -20,7 +20,7 @@ export const MARCA = {
   papel: 'Sites e landing pages que viram pedido',
   assinatura: 'Matheus Bonato',
   // >>> TODO MATHEUS: complete os links e remova o que não usar.
-  //     Rede com `url` vazia não é renderizada — não precisa apagar o objeto.
+  //     Rede com `url` vazia não é renderizada, não precisa apagar o objeto.
   //     Deixei o e-mail como placeholder de propósito: publicar seu Gmail
   //     pessoal numa página pública é decisão sua, não minha. Se quiser usar
   //     um, prefira um endereço do seu domínio.

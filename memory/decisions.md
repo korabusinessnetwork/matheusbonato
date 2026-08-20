@@ -1,4 +1,4 @@
-# Decisões — Índice de ADRs
+# Decisões, Índice de ADRs
 
 ## Objetivo
 Índice único das decisões de arquitetura do projeto. O registro completo de cada
@@ -12,7 +12,7 @@ e o que ainda está em aberto.
 ## Regras Gerais
 - Toda decisão que muda stack, arquitetura, dado ou custo recorrente vira ADR.
 - ADR aceito não se reescreve: se mudou, abre-se um novo que o supersede.
-- Escolha de nome de variável ou detalhe de estilo NÃO é ADR — é `patterns.md`.
+- Escolha de nome de variável ou detalhe de estilo NÃO é ADR, é `patterns.md`.
 
 ## Validações
 - ADR só entra como "Aceito" quando o código correspondente foi para a branch.
@@ -44,5 +44,5 @@ e o que ainda está em aberto.
 
 ## Em aberto (a decidir)
 - Persistir o lead (Supabase ou e-mail) para não perder quem desiste antes de
-  clicar em enviar — hoje esse lead se perde. Reavaliar quando o volume justificar.
+  clicar em enviar, hoje esse lead se perde. Reavaliar quando o volume justificar.
 - Domínio final e provedor de DNS.

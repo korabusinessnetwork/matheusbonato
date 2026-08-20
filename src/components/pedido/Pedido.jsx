@@ -14,7 +14,7 @@ const OPCOES_PACOTE = PACOTES.map((pacote) => ({ id: pacote.id, rotulo: pacote.n
 export function Pedido({ pedido, erros, enviado, link, mudar, revisar }) {
   /**
    * O botão é um <a> de verdade com o link do WhatsApp já montado.
-   * Se a validação passar, deixamos o navegador seguir o link normalmente —
+   * Se a validação passar, deixamos o navegador seguir o link normalmente,
    * é o clique da pessoa que abre a aba, então nenhum bloqueador de pop-up
    * atrapalha. Se não passar, cancelamos e mostramos o erro no campo.
    */

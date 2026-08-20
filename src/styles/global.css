@@ -117,7 +117,7 @@ p {
   color: var(--cor-acento);
 }
 
-/* Só para leitor de tela — usado nos rótulos que o olho dispensa. */
+/* Só para leitor de tela, usado nos rótulos que o olho dispensa. */
 .apenas-leitor {
   position: absolute;
   width: 1px;

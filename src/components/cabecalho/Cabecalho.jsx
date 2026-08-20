@@ -7,7 +7,7 @@ import './Cabecalho.css'
 
 const IDS_SECOES = SECOES.map((secao) => secao.id)
 
-/* No desktop o pedido já tem o botão de CTA ao lado — repetir o link polui. */
+/* No desktop o pedido já tem o botão de CTA ao lado, repetir o link polui. */
 const SECOES_NAV = SECOES.filter((secao) => secao.id !== 'pedido')
 
 export function Cabecalho() {

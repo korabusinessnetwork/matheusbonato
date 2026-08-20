@@ -1,10 +1,10 @@
-# 07 — APIS
+# 07, APIS
 
 Este projeto **não expõe nem consome API HTTP**. A única integração externa é um
 esquema de URL: o link do WhatsApp. Ele é o contrato desta aplicação e está
 documentado aqui como tal.
 
-## Contrato — link de conversa do WhatsApp
+## Contrato, link de conversa do WhatsApp
 
 ```
 https://wa.me/<numero>?text=<mensagem-codificada>
@@ -16,7 +16,7 @@ https://wa.me/<numero>?text=<mensagem-codificada>
 | `<mensagem>` | Texto livre, obrigatoriamente `encodeURIComponent` | `montarUrlWhatsApp` em `src/lib/whatsapp.js` |
 
 Sem mensagem, o link abre a conversa vazia. Sem número, `montarUrlWhatsApp`
-devolve string vazia — não gera link quebrado.
+devolve string vazia, não gera link quebrado.
 
 ## Formato da mensagem de pedido
 
@@ -39,7 +39,7 @@ Pode me chamar por aqui.
 Regras do formato (todas cobertas por teste em `src/lib/whatsapp.test.js`):
 - Os `*asteriscos*` são a sintaxe de negrito do próprio WhatsApp.
 - Ids do formulário são traduzidos para o **rótulo que a pessoa leu na tela**.
-- Campo opcional vazio **não vira linha** — some da mensagem.
+- Campo opcional vazio **não vira linha**, some da mensagem.
 - Pedido vazio degrada com elegância (`Alguém`, `ainda não escolhido`).
 - Contexto acima de 1000 caracteres é cortado na palavra (RN-08).
 
@@ -48,7 +48,7 @@ Regras do formato (todas cobertas por teste em `src/lib/whatsapp.test.js`):
 `encodeURIComponent` é o que impede que texto digitado escape para a estrutura da
 URL: `&`, `=`, `?`, `<`, quebra de linha e acento viram sequências percentuais.
 Há teste específico para tentativa de injetar parâmetro (`&phone=`) e marcação
-(`<script>`) — ambos são neutralizados.
+(`<script>`), ambos são neutralizados.
 
 ## Se um dia entrar uma API de verdade
 

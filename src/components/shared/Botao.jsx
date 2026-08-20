@@ -2,7 +2,7 @@ import './Botao.css'
 
 /**
  * Botão único da página. Vira <a> quando recebe `href` e <button> quando não
- * recebe — o elemento certo para cada caso, sem `<div>` clicável.
+ * recebe, o elemento certo para cada caso, sem `<div>` clicável.
  * Variantes: primario (o que converte), secundario (contorno), fantasma (texto).
  */
 export function Botao({

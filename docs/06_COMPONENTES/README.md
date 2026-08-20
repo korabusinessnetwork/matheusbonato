@@ -1,4 +1,4 @@
-# 06 — COMPONENTES
+# 06, COMPONENTES
 
 Organização por **feature/seção**, não por tipo técnico. Cada pasta tem o
 componente e o CSS de mesmo nome ao lado.
@@ -6,17 +6,17 @@ componente e o CSS de mesmo nome ao lado.
 ```
 src/components/
 ├── shared/       Botao · Revelar · Secao (+ AberturaSecao) · BarraFixa
-├── cabecalho/    Cabecalho — menu, scroll-spy, CTA, menu mobile
-├── hero/         Hero — promessa, CTA duplo, selos
-├── problema/     Problema — o inimigo comum, 4 sintomas
-├── trajetoria/   Trajetoria — linha do tempo + "o que eu faço"
-├── metodo/       Metodo — 4 passos com duração
-├── pacotes/      Pacotes — o cardápio; escolher preenche o pedido
-├── provas/       Provas — projetos próprios + slot de cases
-├── garantia/     Garantia — faixa escura, risco zero
-├── duvidas/      Duvidas — acordeão <details> nativo
+├── cabecalho/    Cabecalho, menu, scroll-spy, CTA, menu mobile
+├── hero/         Hero, promessa, CTA duplo, selos
+├── problema/     Problema, o inimigo comum, 4 sintomas
+├── trajetoria/   Trajetoria, linha do tempo + "o que eu faço"
+├── metodo/       Metodo, 4 passos com duração
+├── pacotes/      Pacotes, o cardápio; escolher preenche o pedido
+├── provas/       Provas, projetos próprios + slot de cases
+├── garantia/     Garantia, faixa escura, risco zero
+├── duvidas/      Duvidas, acordeão <details> nativo
 ├── pedido/       Pedido + CampoTexto + GrupoOpcoes
-└── rodape/       Rodape — contato, redes, aviso de privacidade
+└── rodape/       Rodape, contato, redes, aviso de privacidade
 ```
 
 ## Contratos

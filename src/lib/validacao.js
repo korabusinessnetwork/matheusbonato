@@ -1,5 +1,5 @@
 /*
- * Validação do pedido. Roda ANTES de qualquer coisa sair da página —
+ * Validação do pedido. Roda ANTES de qualquer coisa sair da página,
  * princípio da fundação: prevenir o erro é melhor que reportar o erro.
  * Devolve erro por campo (o erro aparece no campo, nunca num alerta genérico).
  */
@@ -50,7 +50,7 @@ export function validarPedido(pedido = {}) {
 
 /**
  * Armadilha anti-robô: campo invisível que só um bot preenche.
- * Mais barato e menos invasivo que captcha — e não custa nada.
+ * Mais barato e menos invasivo que captcha, e não custa nada.
  */
 export function pareceRobo(pedido = {}) {
   return String(pedido.sobrenome ?? '').trim().length > 0

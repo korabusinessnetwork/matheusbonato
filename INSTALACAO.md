@@ -2,7 +2,7 @@
 
 ## Requisitos
 
-- **Node.js 18 ou superior** (testado no 22) — https://nodejs.org
+- **Node.js 18 ou superior** (testado no 22), https://nodejs.org
 - npm (vem junto com o Node)
 - Um editor de texto (VS Code, por exemplo)
 
@@ -40,7 +40,7 @@ npm run validar
 Esse comando roda os 31 testes e faz o build. Se passar, o projeto está saudável.
 
 Além disso, enquanto o número do WhatsApp for o de exemplo, a página mostra um
-aviso vermelho embaixo do formulário — **só em desenvolvimento**, nunca em
+aviso vermelho embaixo do formulário, **só em desenvolvimento**, nunca em
 produção.
 
 ## Testando o pedido de verdade
@@ -49,7 +49,7 @@ produção.
 2. O formulário abaixo já vem com o pacote marcado.
 3. Preencha e clique em **Enviar pedido no WhatsApp**.
 4. Abre uma aba do WhatsApp Web (ou o aplicativo, no celular) com a mensagem
-   inteira já escrita — nome, pacote, objetivo, prazo, orçamento e contexto.
+   inteira já escrita, nome, pacote, objetivo, prazo, orçamento e contexto.
 
 Se clicar sem preencher, nada abre: os campos que faltam ficam marcados e o foco
 vai para o primeiro deles.
@@ -58,7 +58,7 @@ vai para o primeiro deles.
 
 **"O botão abre uma conversa vazia"**
 O `.env` não foi criado, ou o número está com máscara. Use só dígitos:
-`5544999998888` — sem `+`, sem parênteses, sem traço.
+`5544999998888`, sem `+`, sem parênteses, sem traço.
 
 **"Mudei o `.env` e não surtiu efeito"**
 Variáveis de ambiente são lidas na inicialização. Pare o servidor (`Ctrl+C`) e
@@ -66,7 +66,7 @@ rode `npm run dev` de novo.
 
 **"A fonte está diferente do esperado"**
 As fontes vêm do Google Fonts. Sem internet (ou com o acesso bloqueado), a página
-cai na pilha de fallback — continua legível e bem proporcionada, só muda o desenho
+cai na pilha de fallback, continua legível e bem proporcionada, só muda o desenho
 das letras.
 
 **"npm install falhou"**

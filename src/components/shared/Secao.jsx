@@ -3,7 +3,7 @@ import './Secao.css'
 
 /**
  * Moldura de toda seção da página: número, etiqueta em versalete, fio horizontal
- * e o respiro vertical padrão. É o que dá o ritmo editorial — cada seção lida
+ * e o respiro vertical padrão. É o que dá o ritmo editorial, cada seção lida
  * como uma página de revista, sempre no mesmo grid.
  */
 export function Secao({ id, numero, etiqueta, tom = 'papel', children, className = '' }) {

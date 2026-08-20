@@ -3,7 +3,7 @@ import './Revelar.css'
 
 /**
  * Sobe e revela o conteúdo quando ele entra na tela.
- * `atraso` escalona itens de uma mesma lista (0, 1, 2…) — em passos curtos,
+ * `atraso` escalona itens de uma mesma lista (0, 1, 2…), em passos curtos,
  * porque animação longa em série faz a página parecer lenta.
  */
 export function Revelar({ children, atraso = 0, como: Tag = 'div', className = '', ...resto }) {

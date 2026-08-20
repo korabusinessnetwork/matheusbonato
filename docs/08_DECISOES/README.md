@@ -1,7 +1,7 @@
-# 08 — DECISÕES (ADRs)
+# 08, DECISÕES (ADRs)
 
 Registro das decisões de arquitetura. Um ADR é curto, imutável na essência e
-explica o **porquê** de uma escolha estrutural — inclusive as consequências ruins.
+explica o **porquê** de uma escolha estrutural, inclusive as consequências ruins.
 
 ## Linha do tempo
 

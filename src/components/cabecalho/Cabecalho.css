@@ -61,7 +61,7 @@
   transition: color var(--d-rapida) var(--ease-padrao);
 }
 
-/* Sublinhado que cresce da esquerda — marca a seção lida sem pesar o menu. */
+/* Sublinhado que cresce da esquerda, marca a seção lida sem pesar o menu. */
 .cabecalho__link::after {
   content: '';
   position: absolute;

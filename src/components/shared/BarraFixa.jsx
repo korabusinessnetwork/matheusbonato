@@ -4,7 +4,7 @@ import './BarraFixa.css'
 
 /**
  * Barra de ação fixa no rodapé do celular. Aparece depois que a pessoa passa
- * da primeira tela e some quando o próprio formulário está à vista — duas
+ * da primeira tela e some quando o próprio formulário está à vista, duas
  * chamadas concorrentes na mesma tela atrapalham em vez de converter.
  */
 export function BarraFixa() {

@@ -1,4 +1,4 @@
-# ADR-004 — Oferta em 3 pacotes com preço "a partir de"
+# ADR-004, Oferta em 3 pacotes com preço "a partir de"
 
 **Status**: Aceito
 **Data**: 2026-08-20
@@ -18,8 +18,8 @@ piso ("a partir de").
 
 ## Decisão
 
-Publicar **três pacotes** — Landing Page de Conversão, Site Institucional e Sob
-Medida — cada um com público declarado, entregáveis fechados, prazo e um preço
+Publicar **três pacotes**, Landing Page de Conversão, Site Institucional e Sob
+Medida, cada um com público declarado, entregáveis fechados, prazo e um preço
 **"a partir de"**. O valor final sai no diagnóstico. Acompanha uma **garantia de
 prazo**: se o site não subir no prazo da proposta, devolve-se 100%.
 
@@ -46,13 +46,13 @@ Preço, entregáveis e opções do formulário vivem em `src/constants/pacotes.j
 - Ancoragem: o visitante já chega ao WhatsApp sabendo a faixa.
 - Triagem automática: o campo de orçamento no formulário revela desalinhamento
   antes da conversa.
-- O pacote escolhido no cardápio já vai preenchido no pedido — menos atrito.
+- O pacote escolhido no cardápio já vai preenchido no pedido, menos atrito.
 
 ### Negativas / Trade-offs
 - Menos leads no topo do funil do que a opção sem preço. É intencional.
 - Preço público é copiável por concorrente.
 - **Os valores atuais são um ponto de partida de mercado, não uma decisão
-  final do dono** — estão marcados com `>>> TODO MATHEUS` no arquivo e devem ser
+  final do dono**, estão marcados com `>>> TODO MATHEUS` no arquivo e devem ser
   revistos antes de publicar. Alterar preço não exige ADR novo; alterar a
   *estrutura* da oferta (número de pacotes, modelo de cobrança) exige.
 - A garantia de prazo transfere risco real para o dono: só se sustenta enquanto
@@ -60,5 +60,5 @@ Preço, entregáveis e opções do formulário vivem em `src/constants/pacotes.j
 
 ## Referências
 - `src/constants/pacotes.js`
-- `memory/identity.md` — posicionamento e personas
-- `memory/restrictions.md` — preço e garantia não mudam sem aval do dono
+- `memory/identity.md`, posicionamento e personas
+- `memory/restrictions.md`, preço e garantia não mudam sem aval do dono

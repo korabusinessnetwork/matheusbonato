@@ -61,6 +61,28 @@ export const PACOTES = [
   },
 ]
 
+/**
+ * O quarto caminho, para quem não se encaixa em nenhum dos três.
+ *
+ * Fica FORA de PACOTES de propósito: não tem preço de tabela nem lista fechada,
+ * é o oposto de um pacote. Quem escolhe aqui monta o escopo no formulário e o
+ * preço sai no diagnóstico.
+ */
+export const PACOTE_PERSONALIZADO = {
+  id: 'personalizado',
+  nome: 'Plano personalizado',
+  promessa: 'Você diz o que precisa. Eu monto em cima disso.',
+}
+
+/**
+ * As opções de pacote do formulário, na mesma ordem em que aparecem no
+ * cardápio. Fonte única: mexer em PACOTES ou no personalizado muda os dois lados.
+ */
+export const OPCOES_PACOTE = [
+  ...PACOTES.map((pacote) => ({ id: pacote.id, rotulo: pacote.nome })),
+  { id: PACOTE_PERSONALIZADO.id, rotulo: PACOTE_PERSONALIZADO.nome },
+]
+
 /** Opções do formulário. Mudar aqui muda o formulário E a mensagem do WhatsApp. */
 export const OBJETIVOS = [
   { id: 'vender', rotulo: 'Vender mais / receber pedido' },

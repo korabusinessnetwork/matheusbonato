@@ -37,6 +37,13 @@ describe('montarMensagemPedido', () => {
     expect(mensagem).toContain('não informado')
   })
 
+  it('nomeia o plano personalizado em vez de dizer que nada foi escolhido', () => {
+    const mensagem = montarMensagemPedido({ ...pedidoCompleto, pacote: 'personalizado' })
+    expect(mensagem).toContain('Plano personalizado')
+    expect(mensagem).not.toContain('ainda não escolhido')
+    expect(mensagem).not.toContain('a partir de')
+  })
+
   it('corta contexto gigante para a URL não estourar', () => {
     const mensagem = montarMensagemPedido({ ...pedidoCompleto, contexto: 'a'.repeat(5000) })
     expect(mensagem.length).toBeLessThan(1400)

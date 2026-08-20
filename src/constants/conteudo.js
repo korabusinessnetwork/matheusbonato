@@ -169,6 +169,21 @@ export const PACOTES_SECAO = {
     'Escopo fechado, prazo fechado, preço a partir de. Clique no pacote e ele já vai preenchido no seu pedido, o valor final sai no diagnóstico, depois de eu entender o tamanho real do projeto.',
   rodape:
     'Todos os pacotes incluem: domínio configurado, hospedagem rápida, versão mobile, duas rodadas de ajuste e o código sendo seu no fim.',
+  // A saída para quem não se encaixa em nenhum dos três. Sem esta faixa, essa
+  // pessoa fecha a página: ninguém escolhe um pacote errado só pra ter um.
+  personalizado: {
+    etiqueta: 'Nenhum dos três encaixa?',
+    titulo: 'Então monte o seu.',
+    texto:
+      'Você não precisa caber num pacote pra falar comigo. Me diz o que o seu negócio precisa e eu monto o escopo em cima disso, com preço e prazo fechados no diagnóstico, do mesmo jeito que nos outros três.',
+    itens: [
+      'Você escolhe as peças: página, site, painel, integração, automação',
+      'Preço calculado no que você precisa, sem pagar por item que não usa',
+      'Mesmo diagnóstico, mesmo orçamento fechado, mesma garantia de prazo',
+    ],
+    botao: 'Montar meu plano',
+    nota: 'O diagnóstico é gratuito e você sai dele com o escopo na mão, fechando comigo ou não.',
+  },
 }
 
 export const PROVAS = {
@@ -261,6 +276,14 @@ export const DUVIDAS = {
       pergunta: 'Você atende fora da minha cidade?',
       resposta:
         'Atendo o Brasil inteiro, tudo remoto, WhatsApp e chamada quando precisa. A maior parte dos projetos vai do começo ao fim sem uma única reunião presencial.',
+    },
+    {
+      // >>> TODO MATHEUS: esta é a condição mais comum do mercado, não a sua
+      //     decisão. Confirme ou troque entrada, parcelas e formas de pagamento
+      //     antes de divulgar a página, é o que o cliente vai cobrar de você.
+      pergunta: 'Como funciona o pagamento?',
+      resposta:
+        'Metade na hora de fechar, que é o que reserva sua vaga na fila, e metade quando o site entra no ar. Pix ou cartão. Não tem taxa escondida nem cobrança depois: o valor combinado no diagnóstico é o valor final, e qualquer coisa fora do escopo eu te digo o preço antes de fazer, nunca depois.',
     },
     {
       pergunta: 'Tem mensalidade?',

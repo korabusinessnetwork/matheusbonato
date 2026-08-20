@@ -6,7 +6,14 @@
  * Tudo aqui é função pura (entra objeto, sai string), testado em whatsapp.test.js.
  */
 
-import { PACOTES, OBJETIVOS, PRAZOS, ORCAMENTOS, formatarPreco } from '../constants/pacotes.js'
+import {
+  PACOTES,
+  PACOTE_PERSONALIZADO,
+  OBJETIVOS,
+  PRAZOS,
+  ORCAMENTOS,
+  formatarPreco,
+} from '../constants/pacotes.js'
 import { limitar, normalizarEspacos } from '../utils/formatar.js'
 import { LIMITE_CONTEXTO } from './validacao.js'
 
@@ -18,6 +25,11 @@ function rotuloDe(lista, id, alternativo = 'não informado') {
 }
 
 function rotuloPacote(id) {
+  // O plano personalizado nao tem preco de tabela: quem escolhe ele quer montar
+  // o escopo, entao a mensagem diz isso em vez de mostrar um valor qualquer.
+  if (id === PACOTE_PERSONALIZADO.id) {
+    return `${PACOTE_PERSONALIZADO.nome} (escopo e preco a fechar no diagnostico)`
+  }
   const pacote = PACOTES.find((item) => item.id === id)
   if (!pacote) return 'ainda não escolhido'
   return `${pacote.nome} (a partir de ${formatarPreco(pacote.precoDe)})`

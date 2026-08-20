@@ -1,5 +1,5 @@
 import { PACOTES_SECAO } from '../../constants/conteudo.js'
-import { PACOTES, formatarPreco } from '../../constants/pacotes.js'
+import { PACOTES, PACOTE_PERSONALIZADO, formatarPreco } from '../../constants/pacotes.js'
 import { Secao, AberturaSecao } from '../shared/Secao.jsx'
 import { Revelar } from '../shared/Revelar.jsx'
 import { Botao } from '../shared/Botao.jsx'
@@ -10,6 +10,9 @@ import './Pacotes.css'
  * aqui já leva o pacote preenchido lá embaixo, a pessoa não digita duas vezes.
  */
 export function Pacotes({ pacoteEscolhido, aoEscolher }) {
+  const personalizado = PACOTES_SECAO.personalizado
+  const montandoOSeu = pacoteEscolhido === PACOTE_PERSONALIZADO.id
+
   return (
     <Secao id="pacotes" numero={PACOTES_SECAO.numero} etiqueta={PACOTES_SECAO.etiqueta}>
       <AberturaSecao id="pacotes" titulo={PACOTES_SECAO.titulo} texto={PACOTES_SECAO.texto} />
@@ -65,6 +68,41 @@ export function Pacotes({ pacoteEscolhido, aoEscolher }) {
           )
         })}
       </ul>
+
+      {/*
+        A saída para quem não se encaixa em nenhum dos três. Fica fora da grade
+        de cartões de propósito: não é um quarto pacote com preço de tabela, é
+        o convite a montar o próprio escopo no formulário lá embaixo.
+      */}
+      <Revelar
+        className={`personalizado ${montandoOSeu ? 'personalizado--escolhido' : ''}`.trim()}
+      >
+        <div className="personalizado__texto">
+          <span className="personalizado__etiqueta">{personalizado.etiqueta}</span>
+          <h3 className="personalizado__titulo">{personalizado.titulo}</h3>
+          <p className="personalizado__resumo">{personalizado.texto}</p>
+
+          <ul className="personalizado__itens">
+            {personalizado.itens.map((item) => (
+              <li key={item} className="personalizado__item">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="personalizado__acao">
+          <Botao
+            larguraTotal
+            onClick={() => aoEscolher(PACOTE_PERSONALIZADO.id)}
+            aria-label="Montar um plano personalizado e ir para o formulário de pedido"
+          >
+            {montandoOSeu ? 'Escolhido, ir ao pedido' : personalizado.botao}
+          </Botao>
+
+          <p className="personalizado__nota">{personalizado.nota}</p>
+        </div>
+      </Revelar>
 
       <Revelar>
         <p className="pacotes__rodape">{PACOTES_SECAO.rodape}</p>

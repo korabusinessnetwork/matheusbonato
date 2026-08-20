@@ -1,5 +1,5 @@
 import { PEDIDO } from '../../constants/conteudo.js'
-import { PACOTES, OBJETIVOS, PRAZOS, ORCAMENTOS } from '../../constants/pacotes.js'
+import { OPCOES_PACOTE, OBJETIVOS, PRAZOS, ORCAMENTOS } from '../../constants/pacotes.js'
 import { WHATSAPP_E_EXEMPLO } from '../../constants/contato.js'
 import { LIMITE_CONTEXTO, LIMITE_NOME, LIMITE_NEGOCIO } from '../../lib/validacao.js'
 import { Secao, AberturaSecao } from '../shared/Secao.jsx'
@@ -8,8 +8,6 @@ import { Botao } from '../shared/Botao.jsx'
 import { CampoTexto } from './CampoTexto.jsx'
 import { GrupoOpcoes } from './GrupoOpcoes.jsx'
 import './Pedido.css'
-
-const OPCOES_PACOTE = PACOTES.map((pacote) => ({ id: pacote.id, rotulo: pacote.nome }))
 
 export function Pedido({ pedido, erros, enviado, link, mudar, revisar }) {
   /**

@@ -37,6 +37,7 @@ export const SECOES = [
   { id: 'metodo', rotulo: 'Método' },
   { id: 'pacotes', rotulo: 'Pacotes' },
   { id: 'provas', rotulo: 'Provas' },
+  { id: 'garantia', rotulo: 'Garantia' },
   { id: 'duvidas', rotulo: 'Dúvidas' },
   { id: 'pedido', rotulo: 'Fazer pedido' },
 ]

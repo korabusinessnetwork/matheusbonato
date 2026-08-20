@@ -74,7 +74,7 @@ export const TRAJETORIA = {
         'Descobri na prática que site bonito sem estrutura de conversão não muda o faturamento de ninguém. Passei a projetar o caminho antes do layout.',
     },
     {
-      ano: '2024',
+      ano: '2026',
       titulo: 'Sistemas de verdade, em operação',
       texto:
         'Construí PDV com emissão fiscal, controle de estoque, integração de pagamento e SaaS multi-cliente. Software que gente usa todo dia, com dinheiro passando por dentro.',

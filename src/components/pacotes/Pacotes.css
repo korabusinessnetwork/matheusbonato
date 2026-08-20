@@ -1,0 +1,188 @@
+.pacotes {
+  display: grid;
+  gap: var(--e-5);
+  list-style: none;
+  padding: 0;
+}
+
+.pacote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--e-5);
+  padding: var(--e-6) var(--e-5) var(--e-5);
+  background: var(--cor-papel);
+  border: var(--fio-forte);
+  transition:
+    border-color var(--d-media) var(--ease-padrao),
+    transform var(--d-media) var(--ease-saida);
+}
+
+.pacote:hover {
+  border-color: var(--cor-tinta);
+}
+
+.pacote--destaque {
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+  border-color: var(--cor-tinta);
+}
+
+.pacote--escolhido {
+  border-color: var(--cor-acento);
+  box-shadow: inset 0 0 0 1px var(--cor-acento);
+}
+
+.pacote__fita {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--e-1) var(--e-3);
+  background: var(--cor-acento);
+  color: var(--cor-papel);
+  font-size: var(--t-micro);
+  letter-spacing: var(--letra-etiqueta);
+  text-transform: uppercase;
+}
+
+.pacote__numero {
+  display: block;
+  font-family: var(--fonte-display);
+  font-size: var(--t-corpo-g);
+  color: var(--cor-acento);
+  margin-bottom: var(--e-3);
+}
+
+.pacote--destaque .pacote__numero {
+  color: var(--cor-papel);
+  opacity: 0.55;
+}
+
+.pacote__nome {
+  font-family: var(--fonte-display);
+  font-size: var(--t-subtitulo);
+  letter-spacing: var(--letra-display);
+  margin-bottom: var(--e-2);
+}
+
+.pacote__promessa {
+  font-size: var(--t-pequeno);
+  color: var(--cor-tinta-70);
+}
+
+.pacote--destaque .pacote__promessa,
+.pacote--destaque .pacote__para,
+.pacote--destaque .pacote__item {
+  color: rgba(244, 241, 234, 0.75);
+}
+
+.pacote__para {
+  font-size: var(--t-pequeno);
+  color: var(--cor-tinta-70);
+  padding-top: var(--e-4);
+  border-top: var(--fio);
+}
+
+.pacote--destaque .pacote__para,
+.pacote--destaque .pacote__preco,
+.pacote--destaque .pacote__itens {
+  border-color: rgba(244, 241, 234, 0.2);
+}
+
+.pacote__para-rotulo {
+  display: block;
+  font-size: var(--t-micro);
+  letter-spacing: var(--letra-etiqueta);
+  text-transform: uppercase;
+  color: var(--cor-tinta-45);
+  margin-bottom: var(--e-2);
+}
+
+.pacote--destaque .pacote__para-rotulo,
+.pacote--destaque .pacote__preco-rotulo,
+.pacote--destaque .pacote__prazo {
+  color: rgba(244, 241, 234, 0.55);
+}
+
+.pacote__preco {
+  padding-top: var(--e-4);
+  border-top: var(--fio);
+}
+
+.pacote__preco-rotulo {
+  display: block;
+  font-size: var(--t-micro);
+  letter-spacing: var(--letra-etiqueta);
+  text-transform: uppercase;
+  color: var(--cor-tinta-45);
+}
+
+.pacote__preco-valor {
+  display: block;
+  font-family: var(--fonte-display);
+  font-size: clamp(2.25rem, 1.6rem + 2.4vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: var(--letra-display);
+  margin-block: var(--e-1);
+}
+
+.pacote__prazo {
+  font-size: var(--t-pequeno);
+  color: var(--cor-tinta-45);
+}
+
+.pacote__itens {
+  list-style: none;
+  padding: var(--e-4) 0 0;
+  margin: 0 0 auto;
+  border-top: var(--fio);
+  display: grid;
+  gap: var(--e-3);
+}
+
+.pacote__item {
+  position: relative;
+  padding-left: var(--e-5);
+  font-size: var(--t-pequeno);
+  color: var(--cor-tinta-70);
+  line-height: 1.5;
+}
+
+.pacote__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: var(--e-3);
+  height: 1px;
+  background: var(--cor-acento);
+}
+
+/* No cartão escuro o botão inverte, senão some no fundo. */
+.pacote--destaque .botao--primario {
+  --fundo: var(--cor-papel);
+  --frente: var(--cor-tinta);
+  --borda: var(--cor-papel);
+}
+
+.pacotes__rodape {
+  margin-top: var(--e-6);
+  padding-top: var(--e-4);
+  border-top: var(--fio);
+  font-size: var(--t-pequeno);
+  color: var(--cor-tinta-45);
+  max-width: 46rem;
+}
+
+@media (min-width: 46rem) {
+  .pacotes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 68rem) {
+  .pacotes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--e-4);
+  }
+}

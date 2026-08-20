@@ -1,0 +1,82 @@
+.secao {
+  padding-block: var(--secao-y);
+  border-top: var(--fio);
+  scroll-margin-top: var(--altura-cabecalho);
+}
+
+.secao--escuro {
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+  border-top-color: transparent;
+}
+
+.secao--realce {
+  background: var(--cor-papel-2);
+}
+
+.secao__topo {
+  display: flex;
+  align-items: baseline;
+  gap: var(--e-4);
+  margin-bottom: var(--e-6);
+}
+
+.secao__numero {
+  font-family: var(--fonte-display);
+  font-size: var(--t-corpo-g);
+  color: var(--cor-acento);
+  line-height: 1;
+}
+
+.secao--escuro .secao__numero {
+  color: var(--cor-papel);
+  opacity: 0.5;
+}
+
+.secao__etiqueta {
+  font-size: var(--t-micro);
+  font-weight: var(--peso-medio);
+  letter-spacing: var(--letra-etiqueta);
+  text-transform: uppercase;
+  color: var(--cor-tinta-45);
+}
+
+.secao--escuro .secao__etiqueta {
+  color: rgba(244, 241, 234, 0.6);
+}
+
+/* O fio que fecha a linha da etiqueta — assinatura do layout suíço. */
+.secao__topo::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--cor-tinta-12);
+  transform: translateY(-0.3em);
+}
+
+.secao--escuro .secao__topo::after {
+  background: rgba(244, 241, 234, 0.18);
+}
+
+.abertura {
+  max-width: 48rem;
+  margin-bottom: var(--e-8);
+}
+
+.abertura--larga {
+  max-width: none;
+}
+
+.abertura__titulo {
+  margin-bottom: var(--e-4);
+}
+
+.abertura__texto {
+  max-width: var(--largura-texto);
+  font-size: var(--t-corpo-g);
+  color: var(--cor-tinta-70);
+}
+
+.secao--escuro .abertura__texto {
+  color: rgba(244, 241, 234, 0.75);
+}

@@ -1,0 +1,76 @@
+.grupo {
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0; /* impede o fieldset de estourar o grid */
+}
+
+.grupo__rotulo {
+  display: flex;
+  align-items: baseline;
+  gap: var(--e-2);
+  padding: 0;
+  margin-bottom: var(--e-3);
+  font-size: var(--t-micro);
+  font-weight: var(--peso-medio);
+  letter-spacing: var(--letra-etiqueta);
+  text-transform: uppercase;
+  color: var(--cor-tinta-70);
+}
+
+.grupo__obrigatorio {
+  color: var(--cor-acento);
+}
+
+.grupo__opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--e-2);
+}
+
+.opcao {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px; /* alvo de toque */
+  padding: var(--e-2) var(--e-4);
+  border: 1px solid var(--cor-tinta-20);
+  cursor: pointer;
+  font-size: var(--t-pequeno);
+  line-height: 1.3;
+  transition:
+    border-color var(--d-rapida) var(--ease-padrao),
+    background-color var(--d-rapida) var(--ease-padrao),
+    color var(--d-rapida) var(--ease-padrao);
+}
+
+.opcao:hover {
+  border-color: var(--cor-tinta);
+}
+
+.opcao--marcada {
+  background: var(--cor-tinta);
+  border-color: var(--cor-tinta);
+  color: var(--cor-papel);
+}
+
+.opcao__radio {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.opcao:has(.opcao__radio:focus-visible) {
+  outline: 2px solid var(--cor-acento);
+  outline-offset: 2px;
+}
+
+.grupo__erro {
+  margin-top: var(--e-2);
+  font-size: var(--t-pequeno);
+  color: var(--cor-erro);
+}

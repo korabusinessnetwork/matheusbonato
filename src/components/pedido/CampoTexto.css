@@ -1,0 +1,80 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e-2);
+}
+
+.campo__rotulo {
+  display: flex;
+  align-items: baseline;
+  gap: var(--e-2);
+  font-size: var(--t-micro);
+  font-weight: var(--peso-medio);
+  letter-spacing: var(--letra-etiqueta);
+  text-transform: uppercase;
+  color: var(--cor-tinta-70);
+}
+
+.campo__obrigatorio {
+  color: var(--cor-acento);
+}
+
+.campo__opcional {
+  font-size: var(--t-micro);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--cor-tinta-45);
+}
+
+.campo__controle {
+  width: 100%;
+  padding: var(--e-3) 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--cor-tinta-20);
+  border-radius: var(--raio-0);
+  font-size: var(--t-corpo-g);
+  /* 16px+ evita o zoom automático do iOS ao focar o campo. */
+  color: var(--cor-tinta);
+  transition: border-color var(--d-rapida) var(--ease-padrao);
+  resize: vertical;
+}
+
+.campo__controle::placeholder {
+  color: var(--cor-tinta-45);
+}
+
+.campo__controle:focus {
+  outline: none;
+  border-bottom-color: var(--cor-acento);
+  border-bottom-width: 2px;
+  padding-bottom: calc(var(--e-3) - 1px);
+}
+
+.campo__controle--erro {
+  border-bottom-color: var(--cor-erro);
+}
+
+.campo__base {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--e-3);
+  min-height: 1.1rem;
+}
+
+.campo__erro {
+  font-size: var(--t-pequeno);
+  color: var(--cor-erro);
+}
+
+.campo__dica,
+.campo__contador {
+  font-size: var(--t-micro);
+  color: var(--cor-tinta-45);
+}
+
+.campo__contador {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}

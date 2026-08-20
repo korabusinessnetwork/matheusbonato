@@ -1,0 +1,222 @@
+.cabecalho {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: var(--z-cabecalho);
+  height: var(--altura-cabecalho);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  transition:
+    background-color var(--d-media) var(--ease-padrao),
+    border-color var(--d-media) var(--ease-padrao),
+    backdrop-filter var(--d-media) var(--ease-padrao);
+}
+
+.cabecalho--fixado {
+  background: rgba(244, 241, 234, 0.86);
+  backdrop-filter: blur(12px);
+  border-bottom-color: var(--cor-tinta-12);
+}
+
+.cabecalho__linha {
+  display: flex;
+  align-items: center;
+  gap: var(--e-5);
+  width: 100%;
+}
+
+.cabecalho__marca {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.cabecalho__nome {
+  font-family: var(--fonte-display);
+  font-size: 1.25rem;
+  line-height: 1;
+  letter-spacing: var(--letra-display);
+}
+
+.cabecalho__papel {
+  font-size: var(--t-micro);
+  color: var(--cor-tinta-45);
+  letter-spacing: 0.02em;
+}
+
+.cabecalho__nav {
+  display: none;
+  align-items: center;
+  gap: var(--e-5);
+}
+
+.cabecalho__link {
+  position: relative;
+  font-size: var(--t-pequeno);
+  color: var(--cor-tinta-70);
+  text-decoration: none;
+  padding-block: var(--e-1);
+  transition: color var(--d-rapida) var(--ease-padrao);
+}
+
+/* Sublinhado que cresce da esquerda — marca a seção lida sem pesar o menu. */
+.cabecalho__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: var(--cor-acento);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--d-media) var(--ease-saida);
+}
+
+.cabecalho__link:hover,
+.cabecalho__link--ativo {
+  color: var(--cor-tinta);
+}
+
+.cabecalho__link:hover::after,
+.cabecalho__link--ativo::after {
+  transform: scaleX(1);
+}
+
+.cabecalho__acao {
+  display: none;
+}
+
+/* ── Hambúrguer ───────────────────────────────────────────────────────── */
+
+.cabecalho__hamburguer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px; /* alvo de toque confortável */
+  height: 44px;
+  margin-right: calc(var(--e-2) * -1);
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 22px;
+}
+
+.hamburguer i {
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  background: var(--cor-tinta);
+  transition: transform var(--d-media) var(--ease-saida);
+}
+
+.hamburguer--x i:first-child {
+  transform: translateY(3.75px) rotate(45deg);
+}
+
+.hamburguer--x i:last-child {
+  transform: translateY(-3.75px) rotate(-45deg);
+}
+
+/* ── Menu mobile ──────────────────────────────────────────────────────── */
+
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-menu);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--e-6);
+  padding: calc(var(--altura-cabecalho) + var(--e-6)) var(--margem-lateral) var(--e-7);
+  background: var(--cor-papel);
+  overflow-y: auto;
+  animation: menu-entra var(--d-media) var(--ease-saida);
+}
+
+.menu[hidden] {
+  display: none;
+}
+
+@keyframes menu-entra {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.menu__lista {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--fio);
+}
+
+.menu__item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--e-4);
+  padding-block: var(--e-4);
+  border-bottom: var(--fio);
+  font-family: var(--fonte-display);
+  font-size: clamp(1.75rem, 1.2rem + 3vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: var(--letra-display);
+  text-decoration: none;
+  animation: item-entra var(--d-media) var(--ease-saida) backwards;
+  animation-delay: calc(var(--ordem) * 45ms + 60ms);
+}
+
+.menu__item:hover {
+  color: var(--cor-acento);
+}
+
+@keyframes item-entra {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+.menu__numero {
+  font-family: var(--fonte-texto);
+  font-size: var(--t-micro);
+  color: var(--cor-tinta-45);
+  letter-spacing: var(--letra-etiqueta);
+}
+
+.menu__rodape {
+  padding-top: var(--e-4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu,
+  .menu__item {
+    animation: none;
+  }
+}
+
+/* ── Desktop ──────────────────────────────────────────────────────────── */
+
+@media (min-width: 60rem) {
+  .cabecalho__nav,
+  .cabecalho__acao {
+    display: flex;
+  }
+
+  .cabecalho__hamburguer {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}

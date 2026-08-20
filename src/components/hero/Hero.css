@@ -1,0 +1,146 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  padding-top: calc(var(--altura-cabecalho) + var(--e-8));
+  padding-bottom: var(--e-8);
+  overflow: hidden;
+}
+
+.hero__envelope {
+  width: 100%;
+}
+
+.hero__etiqueta {
+  font-size: var(--t-micro);
+  font-weight: var(--peso-medio);
+  letter-spacing: var(--letra-etiqueta);
+  text-transform: uppercase;
+  color: var(--cor-tinta-45);
+  padding-bottom: var(--e-4);
+  margin-bottom: var(--e-6);
+  border-bottom: var(--fio);
+  animation: sobe var(--d-lenta) var(--ease-saida) backwards;
+}
+
+.hero__titulo {
+  margin-bottom: var(--e-7);
+  animation: sobe var(--d-lenta) var(--ease-saida) 90ms backwards;
+}
+
+/* Título e subtítulo dividem a linha no desktop: o olho lê a promessa,
+   depois desce pro detalhe — sem precisar rolar. */
+.hero__base {
+  display: grid;
+  gap: var(--e-6);
+  padding-top: var(--e-6);
+  border-top: var(--fio);
+  animation: sobe var(--d-lenta) var(--ease-saida) 180ms backwards;
+}
+
+.hero__subtitulo {
+  max-width: var(--largura-texto);
+  font-size: var(--t-corpo-g);
+  color: var(--cor-tinta-70);
+}
+
+.hero__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--e-3);
+  align-content: start;
+}
+
+.hero__selos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--e-2) var(--e-5);
+  list-style: none;
+  padding: 0;
+  margin-top: var(--e-6);
+  animation: sobe var(--d-lenta) var(--ease-saida) 260ms backwards;
+}
+
+.hero__selo {
+  display: flex;
+  align-items: center;
+  gap: var(--e-2);
+  font-size: var(--t-pequeno);
+  color: var(--cor-tinta-70);
+}
+
+.hero__selo::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--cor-acento);
+  flex-shrink: 0;
+}
+
+.hero__rolar {
+  position: absolute;
+  right: var(--margem-lateral);
+  bottom: var(--e-8);
+  font-size: var(--t-micro);
+  letter-spacing: var(--letra-etiqueta);
+  text-transform: uppercase;
+  color: var(--cor-tinta-45);
+  writing-mode: vertical-rl;
+  display: none;
+}
+
+.hero__rolar::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: var(--e-6);
+  margin: var(--e-3) auto 0;
+  background: var(--cor-tinta-20);
+  animation: fio-desce 2.4s var(--ease-padrao) infinite;
+  transform-origin: top;
+}
+
+@keyframes sobe {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fio-desce {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__etiqueta,
+  .hero__titulo,
+  .hero__base,
+  .hero__selos {
+    animation: none;
+  }
+
+  .hero__rolar::after {
+    animation: none;
+  }
+}
+
+@media (min-width: 60rem) {
+  .hero__base {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: var(--e-8);
+  }
+
+  .hero__rolar {
+    display: block;
+  }
+}

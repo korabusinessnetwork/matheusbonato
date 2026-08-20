@@ -1,0 +1,89 @@
+.rodape {
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+  padding-block: var(--secao-y) var(--e-7);
+}
+
+.rodape__topo {
+  display: grid;
+  gap: var(--e-6);
+  padding-bottom: var(--e-7);
+  border-bottom: 1px solid rgba(244, 241, 234, 0.2);
+}
+
+.rodape__frase {
+  font-family: var(--fonte-display);
+  font-size: var(--t-titulo);
+  line-height: var(--altura-titulo);
+  letter-spacing: var(--letra-display);
+  max-width: 18ch;
+  margin-bottom: var(--e-4);
+}
+
+.rodape__chamada {
+  color: rgba(244, 241, 234, 0.65);
+}
+
+/* No fundo escuro o botão inverte para não sumir. */
+.rodape .botao--primario {
+  --fundo: var(--cor-papel);
+  --frente: var(--cor-tinta);
+  --borda: var(--cor-papel);
+  justify-self: start;
+}
+
+.rodape__base {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--e-5);
+  padding-block: var(--e-6);
+}
+
+.rodape__assinatura {
+  font-size: var(--t-pequeno);
+  color: rgba(244, 241, 234, 0.55);
+}
+
+.rodape__redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--e-5);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rodape__rede {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: var(--t-pequeno);
+  text-decoration: none;
+  transition: color var(--d-rapida) var(--ease-padrao);
+}
+
+.rodape__rede:hover {
+  color: var(--cor-acento);
+}
+
+.rodape__usuario {
+  font-size: var(--t-micro);
+  color: rgba(244, 241, 234, 0.45);
+}
+
+.rodape__lgpd {
+  font-size: var(--t-micro);
+  color: rgba(244, 241, 234, 0.4);
+  max-width: 46rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 52rem) {
+  .rodape__topo {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: var(--e-8);
+  }
+}

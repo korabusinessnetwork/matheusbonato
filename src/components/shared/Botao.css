@@ -1,0 +1,97 @@
+.botao {
+  --fundo: var(--cor-tinta);
+  --frente: var(--cor-papel);
+  --borda: var(--cor-tinta);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--e-2);
+  min-height: 44px; /* alvo de toque mínimo, vale para todas as variantes */
+  padding: var(--e-4) var(--e-6);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-0);
+  background: var(--fundo);
+  color: var(--frente);
+  font-size: var(--t-corpo);
+  font-weight: var(--peso-medio);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    color var(--d-media) var(--ease-padrao),
+    border-color var(--d-media) var(--ease-padrao),
+    transform var(--d-rapida) var(--ease-padrao);
+}
+
+/* Preenchimento que sobe no hover — o "movimento" do botão sem sombra nem brilho. */
+.botao::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--cor-acento);
+  transform: translateY(101%);
+  transition: transform var(--d-media) var(--ease-saida);
+}
+
+.botao:hover::before,
+.botao:focus-visible::before {
+  transform: translateY(0);
+}
+
+.botao:hover,
+.botao:focus-visible {
+  color: var(--cor-papel);
+  border-color: var(--cor-acento);
+}
+
+.botao:active {
+  transform: translateY(1px);
+}
+
+.botao--secundario {
+  --fundo: transparent;
+  --frente: var(--cor-tinta);
+  --borda: var(--cor-tinta);
+}
+
+.botao--fantasma {
+  --fundo: transparent;
+  --frente: var(--cor-tinta);
+  --borda: transparent;
+  padding-inline: var(--e-2);
+}
+
+.botao--fantasma::before {
+  display: none;
+}
+
+.botao--fantasma:hover,
+.botao--fantasma:focus-visible {
+  color: var(--cor-acento);
+  border-color: transparent;
+}
+
+.botao--grande {
+  padding: var(--e-5) var(--e-7);
+  font-size: var(--t-corpo-g);
+}
+
+.botao--pequeno {
+  padding: var(--e-3) var(--e-4);
+  font-size: var(--t-pequeno);
+}
+
+.botao--largo {
+  width: 100%;
+}
+
+.botao[aria-disabled='true'] {
+  opacity: 0.45;
+  pointer-events: none;
+}

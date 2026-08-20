@@ -1,0 +1,40 @@
+.sintomas {
+  display: grid;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  border-top: var(--fio);
+}
+
+.sintoma {
+  padding-block: var(--e-5);
+  border-bottom: var(--fio);
+}
+
+.sintoma__marca {
+  display: block;
+  width: var(--e-5);
+  height: 1px;
+  background: var(--cor-acento);
+  margin-bottom: var(--e-4);
+}
+
+.sintoma__titulo {
+  font-family: var(--fonte-texto);
+  font-size: var(--t-corpo-g);
+  font-weight: var(--peso-medio);
+  line-height: 1.35;
+  margin-bottom: var(--e-2);
+}
+
+.sintoma__texto {
+  color: var(--cor-tinta-70);
+  max-width: 34rem;
+}
+
+@media (min-width: 48rem) {
+  .sintomas {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--e-7);
+  }
+}

@@ -1,0 +1,72 @@
+.pedido__escassez {
+  max-width: 46rem;
+  margin-bottom: var(--e-6);
+  padding: var(--e-4);
+  border-left: 2px solid var(--cor-acento);
+  background: var(--cor-acento-10);
+  font-size: var(--t-pequeno);
+  color: var(--cor-tinta-70);
+}
+
+.pedido__caixa {
+  max-width: 56rem;
+  border: var(--fio-forte);
+  padding: clamp(1.25rem, 0.5rem + 3vw, 3rem);
+  background: var(--cor-papel);
+}
+
+.formulario {
+  display: grid;
+  gap: var(--e-6);
+  max-width: 46rem;
+}
+
+.formulario__linha {
+  display: grid;
+  gap: var(--e-6);
+}
+
+.formulario__envio {
+  display: grid;
+  gap: var(--e-3);
+  padding-top: var(--e-5);
+  border-top: var(--fio);
+}
+
+.formulario__aviso {
+  font-size: var(--t-micro);
+  color: var(--cor-tinta-45);
+  line-height: 1.5;
+}
+
+.formulario__sucesso {
+  font-size: var(--t-pequeno);
+  color: var(--cor-sucesso);
+}
+
+.formulario__alerta-dev {
+  font-size: var(--t-micro);
+  color: var(--cor-erro);
+  border: 1px dashed var(--cor-erro);
+  padding: var(--e-2) var(--e-3);
+}
+
+.formulario__alerta-dev code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Fora da tela, mas ainda "preenchível" por robô que ignora CSS. */
+.formulario__armadilha {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (min-width: 40rem) {
+  .formulario__linha {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--e-5) var(--e-6);
+  }
+}

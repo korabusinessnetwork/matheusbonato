@@ -1,0 +1,20 @@
+.revelar {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity var(--d-lenta) var(--ease-saida) var(--atraso, 0ms),
+    transform var(--d-lenta) var(--ease-saida) var(--atraso, 0ms);
+}
+
+.revelar--visivel {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .revelar {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -1,5 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#14140F"/>
-  <path d="M12 46V18h7.4l9.1 17.2L37.6 18H45v28h-6.6V29.6L31.4 43h-5.8L18.6 29.6V46z" fill="#F4F1EA"/>
-  <rect x="12" y="50" width="33" height="3" fill="#C63A17"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!--
+    Favicon: só o M, sem fundo. Asset estático não enxerga tokens.css, então as
+    cores estão escritas aqui, mas são exatamente a tinta e o papel do tema.
+    O media query mantém o M legível na aba clara e na aba escura.
+  -->
+  <style>
+    path { fill: #14140f; }
+    @media (prefers-color-scheme: dark) {
+      path { fill: #f4f1ea; }
+    }
+  </style>
+  <path d="M5 54.9V9.1h12.1L32 37.2 46.9 9.1H59v45.8H48.2V28.1L36.8 50h-9.5L15.8 28.1v26.8z"/>
 </svg>

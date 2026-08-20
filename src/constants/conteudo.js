@@ -180,7 +180,7 @@ export const PROVAS = {
   // [CONFIRMAR] Ajuste as descrições e adicione link/print de cada um quando puder.
   projetos: [
     {
-      nome: 'GASTROMUNDI',
+      nome: 'Kora PDV',
       tipo: 'PDV e operação de restaurante',
       texto:
         'Ponto de venda com emissão fiscal brasileira, controle de estoque por unidade de medida, integração de pagamento e relatórios. Dinheiro real passando, fisco no meio do caminho.',

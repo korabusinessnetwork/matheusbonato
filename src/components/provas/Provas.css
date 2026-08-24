@@ -29,7 +29,7 @@
   font-size: var(--t-micro);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   text-align: right;
 }
 
@@ -51,7 +51,7 @@
   font-weight: var(--peso-medio);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-acento);
+  color: var(--cor-tinta);
   margin-bottom: var(--e-3);
 }
 
@@ -80,7 +80,7 @@
   font-size: var(--t-micro);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   margin-block: var(--e-2);
 }
 

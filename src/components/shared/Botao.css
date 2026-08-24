@@ -1,7 +1,7 @@
 .botao {
-  --fundo: var(--cor-tinta);
+  --fundo: var(--cor-acento);
   --frente: var(--cor-papel);
-  --borda: var(--cor-tinta);
+  --borda: var(--cor-acento);
 
   display: inline-flex;
   align-items: center;
@@ -34,7 +34,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--cor-acento);
+  background: var(--cor-acento-escuro);
   transform: translateY(101%);
   transition: transform var(--d-media) var(--ease-saida);
 }
@@ -47,7 +47,7 @@
 .botao:hover,
 .botao:focus-visible {
   color: var(--cor-papel);
-  border-color: var(--cor-acento);
+  border-color: var(--cor-acento-escuro);
 }
 
 .botao:active {
@@ -91,6 +91,7 @@
   width: 100%;
 }
 
+.botao:disabled,
 .botao[aria-disabled='true'] {
   opacity: 0.45;
   pointer-events: none;

@@ -94,7 +94,7 @@
   font-size: var(--t-micro);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   margin-bottom: var(--e-2);
 }
 
@@ -114,7 +114,7 @@
   font-size: var(--t-micro);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
 }
 
 .pacote__preco-valor {
@@ -128,7 +128,7 @@
 
 .pacote__prazo {
   font-size: var(--t-pequeno);
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
 }
 
 .pacote__itens {
@@ -155,7 +155,7 @@
   top: 0.62em;
   width: var(--e-3);
   height: 1px;
-  background: var(--cor-acento);
+  background: var(--cor-tinta-20);
 }
 
 /* No cartão escuro o botão inverte, senão some no fundo. */
@@ -170,7 +170,7 @@
   padding-top: var(--e-4);
   border-top: var(--fio);
   font-size: var(--t-pequeno);
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   max-width: 46rem;
 }
 
@@ -258,7 +258,7 @@
   top: 0.62em;
   width: var(--e-3);
   height: 1px;
-  background: var(--cor-acento);
+  background: var(--cor-tinta-20);
 }
 
 .personalizado__acao {
@@ -270,7 +270,7 @@
 
 .personalizado__nota {
   font-size: var(--t-micro);
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   line-height: 1.5;
   text-align: center;
 }

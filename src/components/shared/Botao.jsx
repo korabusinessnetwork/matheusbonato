@@ -18,7 +18,8 @@ export function Botao({
   const classe = [
     'botao',
     `botao--${variante}`,
-    `botao--${tamanho}`,
+    // "medio" é o tamanho default: não emite modificador (não há .botao--medio no CSS).
+    tamanho !== 'medio' ? `botao--${tamanho}` : '',
     larguraTotal ? 'botao--largo' : '',
     className,
   ]

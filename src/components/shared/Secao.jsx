@@ -7,8 +7,13 @@ import './Secao.css'
  * como uma página de revista, sempre no mesmo grid.
  */
 export function Secao({ id, numero, etiqueta, tom = 'papel', children, className = '' }) {
+  // "papel" é o tom default (fundo do body): não emite modificador, não há
+  // regra .secao--papel no CSS e a classe só mentiria no markup.
+  const classe = ['secao', tom !== 'papel' ? `secao--${tom}` : '', className]
+    .filter(Boolean)
+    .join(' ')
   return (
-    <section id={id} className={`secao secao--${tom} ${className}`.trim()} aria-labelledby={`${id}-titulo`}>
+    <section id={id} className={classe} aria-labelledby={`${id}-titulo`}>
       <div className="envelope">
         <Revelar className="secao__topo">
           <span className="secao__numero">{numero}</span>

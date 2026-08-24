@@ -42,7 +42,7 @@
 
 .cabecalho__papel {
   font-size: var(--t-micro);
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   letter-spacing: 0.02em;
 }
 
@@ -69,7 +69,7 @@
   bottom: -2px;
   width: 100%;
   height: 1px;
-  background: var(--cor-acento);
+  background: var(--cor-tinta-20);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--d-media) var(--ease-saida);
@@ -176,7 +176,7 @@
 }
 
 .menu__item:hover {
-  color: var(--cor-acento);
+  color: var(--cor-tinta);
 }
 
 @keyframes item-entra {
@@ -189,7 +189,7 @@
 .menu__numero {
   font-family: var(--fonte-texto);
   font-size: var(--t-micro);
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   letter-spacing: var(--letra-etiqueta);
 }
 

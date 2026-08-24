@@ -8,15 +8,14 @@
 :root {
   /* ── Cor ─────────────────────────────────────────────────────────────── */
   --cor-papel: #23272b; /* fundo base, cinza grafite */
-  --cor-papel-2: #2b3035; /* faixa alternada, cartões */
-  --cor-papel-3: #343a40; /* hover de superfície */
+  --cor-papel-2: #2e3439; /* faixa alternada, cartões — ΔE 6 do papel, e tinta-55 ainda passa AA em cima */
   --cor-tinta: #eef1ec; /* texto principal / superfície invertida */
   --cor-tinta-70: rgba(238, 241, 236, 0.7); /* texto secundário */
-  --cor-tinta-45: rgba(238, 241, 236, 0.45); /* texto de apoio, legendas */
+  --cor-tinta-55: rgba(238, 241, 236, 0.55); /* texto de apoio, legendas — 55% é o mínimo que passa AA em corpo pequeno */
   --cor-tinta-20: rgba(238, 241, 236, 0.2); /* bordas de campo */
   --cor-tinta-12: rgba(238, 241, 236, 0.12); /* fios do grid (hairlines) */
   --cor-acento: #b8f14a; /* verde cítrico, só para o que converte */
-  --cor-acento-escuro: #96c92c;
+  --cor-acento-escuro: #96c92c; /* hover do CTA de acento */
   --cor-acento-10: rgba(184, 241, 74, 0.1);
   --cor-erro: #ff7a6b;
   --cor-sucesso: #6fd79a;

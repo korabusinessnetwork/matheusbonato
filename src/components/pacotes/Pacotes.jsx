@@ -92,7 +92,10 @@ export function Pacotes({ pacoteEscolhido, aoEscolher }) {
         </div>
 
         <div className="personalizado__acao">
+          {/* Fantasma de propósito: é a saída de quem não se encaixou nos três,
+              não pode competir com o primário do cartão em destaque. */}
           <Botao
+            variante="fantasma"
             larguraTotal
             onClick={() => aoEscolher(PACOTE_PERSONALIZADO.id)}
             aria-label="Montar um plano personalizado e ir para o formulário de pedido"

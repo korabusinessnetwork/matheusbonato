@@ -65,17 +65,18 @@
 }
 
 .rodape__rede:hover {
-  color: var(--cor-acento);
+  color: var(--cor-papel);
 }
 
 .rodape__usuario {
   font-size: var(--t-micro);
-  color: color-mix(in srgb, var(--cor-papel) 45%, transparent);
+  /* 70% é o mínimo que passa AA para texto pequeno sobre o rodapé claro. */
+  color: color-mix(in srgb, var(--cor-papel) 70%, transparent);
 }
 
 .rodape__lgpd {
   font-size: var(--t-micro);
-  color: color-mix(in srgb, var(--cor-papel) 40%, transparent);
+  color: color-mix(in srgb, var(--cor-papel) 70%, transparent);
   max-width: 46rem;
   line-height: 1.6;
 }

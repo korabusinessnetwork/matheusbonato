@@ -90,6 +90,14 @@ p {
   outline-offset: 3px;
 }
 
+/* Nas superfícies claras (garantia, rodapé, cartão em destaque) o anel lima
+   dá 1.2:1 e some; ali o anel precisa ser escuro. */
+.secao--escuro :focus-visible,
+.rodape :focus-visible,
+.pacote--destaque :focus-visible {
+  outline-color: var(--cor-papel);
+}
+
 /* ── Utilitários de layout ────────────────────────────────────────────── */
 
 .envelope {

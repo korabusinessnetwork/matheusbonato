@@ -23,7 +23,7 @@
   font-family: var(--fonte-display);
   font-size: clamp(2.5rem, 1.6rem + 3.4vw, 3.75rem);
   line-height: 0.85;
-  color: var(--cor-acento);
+  color: var(--cor-tinta-55);
   letter-spacing: var(--letra-display);
 }
 
@@ -31,7 +31,7 @@
   font-size: var(--t-micro);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   white-space: nowrap;
 }
 

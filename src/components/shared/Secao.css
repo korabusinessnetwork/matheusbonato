@@ -24,7 +24,7 @@
 .secao__numero {
   font-family: var(--fonte-display);
   font-size: var(--t-corpo-g);
-  color: var(--cor-acento);
+  color: var(--cor-tinta-55);
   line-height: 1;
 }
 
@@ -38,7 +38,7 @@
   font-weight: var(--peso-medio);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
 }
 
 .secao--escuro .secao__etiqueta {

@@ -19,7 +19,7 @@
 }
 
 .grupo__obrigatorio {
-  color: var(--cor-acento);
+  color: var(--cor-erro);
 }
 
 .grupo__opcoes {
@@ -49,9 +49,9 @@
 }
 
 .opcao--marcada {
-  background: var(--cor-tinta);
-  border-color: var(--cor-tinta);
-  color: var(--cor-papel);
+  background: var(--cor-acento-10);
+  border-color: var(--cor-acento);
+  color: var(--cor-tinta);
 }
 
 .opcao__radio {

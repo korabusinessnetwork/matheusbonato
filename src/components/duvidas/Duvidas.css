@@ -26,7 +26,7 @@
 }
 
 .duvida__pergunta:hover {
-  color: var(--cor-acento);
+  color: var(--cor-tinta);
 }
 
 /* Sinal de + que vira − quando abre. Dois traços, sem ícone externo. */

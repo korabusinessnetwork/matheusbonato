@@ -17,7 +17,7 @@
   font-family: var(--fonte-display);
   font-size: var(--t-subtitulo);
   line-height: 1;
-  color: var(--cor-acento);
+  color: var(--cor-tinta-55);
   letter-spacing: var(--letra-display);
 }
 
@@ -55,7 +55,7 @@
   display: block;
   font-size: var(--t-micro);
   letter-spacing: var(--letra-etiqueta);
-  color: var(--cor-acento);
+  color: var(--cor-tinta-55);
   margin-bottom: var(--e-3);
 }
 

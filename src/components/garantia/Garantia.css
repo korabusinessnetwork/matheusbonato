@@ -37,7 +37,9 @@
   top: 0.62em;
   width: var(--e-3);
   height: 1px;
-  background: var(--cor-acento);
+  /* Neutro como os demais marcadores; nesta seção clara o neutro é o papel
+     (tinta a 20% sumiria sobre o fundo tinta). */
+  background: color-mix(in srgb, var(--cor-papel) 20%, transparent);
 }
 
 @media (min-width: 56rem) {

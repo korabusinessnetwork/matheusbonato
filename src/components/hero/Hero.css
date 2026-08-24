@@ -17,7 +17,7 @@
   font-weight: var(--peso-medio);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   padding-bottom: var(--e-4);
   margin-bottom: var(--e-6);
   border-bottom: var(--fio);
@@ -74,7 +74,7 @@
   content: '';
   width: 5px;
   height: 5px;
-  background: var(--cor-acento);
+  background: var(--cor-tinta-20);
   flex-shrink: 0;
 }
 
@@ -85,7 +85,7 @@
   font-size: var(--t-micro);
   letter-spacing: var(--letra-etiqueta);
   text-transform: uppercase;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
   writing-mode: vertical-rl;
   display: none;
 }

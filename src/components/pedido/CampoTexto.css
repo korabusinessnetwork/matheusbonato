@@ -16,14 +16,14 @@
 }
 
 .campo__obrigatorio {
-  color: var(--cor-acento);
+  color: var(--cor-erro);
 }
 
 .campo__opcional {
   font-size: var(--t-micro);
   letter-spacing: 0.02em;
   text-transform: none;
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
 }
 
 .campo__controle {
@@ -41,7 +41,7 @@
 }
 
 .campo__controle::placeholder {
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
 }
 
 .campo__controle:focus {
@@ -71,7 +71,7 @@
 .campo__dica,
 .campo__contador {
   font-size: var(--t-micro);
-  color: var(--cor-tinta-45);
+  color: var(--cor-tinta-55);
 }
 
 .campo__contador {

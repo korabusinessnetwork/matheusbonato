@@ -42,7 +42,7 @@
 }
 
 .secao--escuro .secao__etiqueta {
-  color: rgba(244, 241, 234, 0.6);
+  color: color-mix(in srgb, var(--cor-papel) 60%, transparent);
 }
 
 /* O fio que fecha a linha da etiqueta, assinatura do layout suíço. */
@@ -55,7 +55,7 @@
 }
 
 .secao--escuro .secao__topo::after {
-  background: rgba(244, 241, 234, 0.18);
+  background: color-mix(in srgb, var(--cor-papel) 18%, transparent);
 }
 
 .abertura {
@@ -78,5 +78,5 @@
 }
 
 .secao--escuro .abertura__texto {
-  color: rgba(244, 241, 234, 0.75);
+  color: color-mix(in srgb, var(--cor-papel) 75%, transparent);
 }

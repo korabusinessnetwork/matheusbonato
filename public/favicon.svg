@@ -5,9 +5,9 @@
     O media query mantém o M legível na aba clara e na aba escura.
   -->
   <style>
-    path { fill: #14140f; }
+    path { fill: #23272b; }
     @media (prefers-color-scheme: dark) {
-      path { fill: #f4f1ea; }
+      path { fill: #eef1ec; }
     }
   </style>
   <path d="M5 54.9V9.1h12.1L32 37.2 46.9 9.1H59v45.8H48.2V28.1L36.8 50h-9.5L15.8 28.1v26.8z"/>

@@ -7,19 +7,25 @@
 
 :root {
   /* ── Cor ─────────────────────────────────────────────────────────────── */
-  --cor-papel: #f4f1ea; /* fundo base, off-white quente */
-  --cor-papel-2: #eae5d9; /* faixa alternada, cartões */
-  --cor-papel-3: #e0dacb; /* hover de superfície */
-  --cor-tinta: #14140f; /* texto principal / preto quente */
-  --cor-tinta-70: rgba(20, 20, 15, 0.7); /* texto secundário */
-  --cor-tinta-45: rgba(20, 20, 15, 0.45); /* texto de apoio, legendas */
-  --cor-tinta-20: rgba(20, 20, 15, 0.2); /* bordas de campo */
-  --cor-tinta-12: rgba(20, 20, 15, 0.12); /* fios do grid (hairlines) */
-  --cor-acento: #c63a17; /* vermelhão de tinta, só para o que converte */
-  --cor-acento-escuro: #a02f12;
-  --cor-acento-10: rgba(198, 58, 23, 0.1);
-  --cor-erro: #a02f12;
-  --cor-sucesso: #2f6b3f;
+  --cor-papel: #23272b; /* fundo base, cinza grafite */
+  --cor-papel-2: #2b3035; /* faixa alternada, cartões */
+  --cor-papel-3: #343a40; /* hover de superfície */
+  --cor-tinta: #eef1ec; /* texto principal / superfície invertida */
+  --cor-tinta-70: rgba(238, 241, 236, 0.7); /* texto secundário */
+  --cor-tinta-45: rgba(238, 241, 236, 0.45); /* texto de apoio, legendas */
+  --cor-tinta-20: rgba(238, 241, 236, 0.2); /* bordas de campo */
+  --cor-tinta-12: rgba(238, 241, 236, 0.12); /* fios do grid (hairlines) */
+  --cor-acento: #b8f14a; /* verde cítrico, só para o que converte */
+  --cor-acento-escuro: #96c92c;
+  --cor-acento-10: rgba(184, 241, 74, 0.1);
+  --cor-erro: #ff7a6b;
+  --cor-sucesso: #6fd79a;
+  /*
+   * Precisa de papel ou tinta com transparência fora da escala acima? Use
+   * color-mix(in srgb, var(--cor-papel) 75%, transparent). Nunca reescreva o
+   * rgb do token no componente: foi exatamente isso que quebrou na troca de
+   * paleta, o valor antigo ficou preso em 16 arquivos.
+   */
 
   /* ── Tipografia ──────────────────────────────────────────────────────── */
   --fonte-display: 'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif;

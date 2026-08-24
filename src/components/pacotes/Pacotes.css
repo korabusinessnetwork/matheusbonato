@@ -73,7 +73,7 @@
 .pacote--destaque .pacote__promessa,
 .pacote--destaque .pacote__para,
 .pacote--destaque .pacote__item {
-  color: rgba(244, 241, 234, 0.75);
+  color: color-mix(in srgb, var(--cor-papel) 75%, transparent);
 }
 
 .pacote__para {
@@ -86,7 +86,7 @@
 .pacote--destaque .pacote__para,
 .pacote--destaque .pacote__preco,
 .pacote--destaque .pacote__itens {
-  border-color: rgba(244, 241, 234, 0.2);
+  border-color: color-mix(in srgb, var(--cor-papel) 20%, transparent);
 }
 
 .pacote__para-rotulo {
@@ -101,7 +101,7 @@
 .pacote--destaque .pacote__para-rotulo,
 .pacote--destaque .pacote__preco-rotulo,
 .pacote--destaque .pacote__prazo {
-  color: rgba(244, 241, 234, 0.55);
+  color: color-mix(in srgb, var(--cor-papel) 55%, transparent);
 }
 
 .pacote__preco {

@@ -9,7 +9,7 @@
 
 .garantia__texto {
   font-size: var(--t-corpo-g);
-  color: rgba(244, 241, 234, 0.8);
+  color: color-mix(in srgb, var(--cor-papel) 80%, transparent);
   max-width: var(--largura-texto);
   margin-bottom: var(--e-5);
 }
@@ -19,7 +19,7 @@
   padding: 0;
   display: grid;
   gap: var(--e-3);
-  border-top: 1px solid rgba(244, 241, 234, 0.2);
+  border-top: 1px solid color-mix(in srgb, var(--cor-papel) 20%, transparent);
   padding-top: var(--e-4);
 }
 
@@ -27,7 +27,7 @@
   position: relative;
   padding-left: var(--e-5);
   font-size: var(--t-pequeno);
-  color: rgba(244, 241, 234, 0.7);
+  color: color-mix(in srgb, var(--cor-papel) 70%, transparent);
 }
 
 .garantia__item::before {

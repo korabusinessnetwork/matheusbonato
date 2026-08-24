@@ -8,7 +8,7 @@
   display: grid;
   gap: var(--e-6);
   padding-bottom: var(--e-7);
-  border-bottom: 1px solid rgba(244, 241, 234, 0.2);
+  border-bottom: 1px solid color-mix(in srgb, var(--cor-papel) 20%, transparent);
 }
 
 .rodape__frase {
@@ -21,7 +21,7 @@
 }
 
 .rodape__chamada {
-  color: rgba(244, 241, 234, 0.65);
+  color: color-mix(in srgb, var(--cor-papel) 65%, transparent);
 }
 
 /* No fundo escuro o botão inverte para não sumir. */
@@ -43,7 +43,7 @@
 
 .rodape__assinatura {
   font-size: var(--t-pequeno);
-  color: rgba(244, 241, 234, 0.55);
+  color: color-mix(in srgb, var(--cor-papel) 55%, transparent);
 }
 
 .rodape__redes {
@@ -70,12 +70,12 @@
 
 .rodape__usuario {
   font-size: var(--t-micro);
-  color: rgba(244, 241, 234, 0.45);
+  color: color-mix(in srgb, var(--cor-papel) 45%, transparent);
 }
 
 .rodape__lgpd {
   font-size: var(--t-micro);
-  color: rgba(244, 241, 234, 0.4);
+  color: color-mix(in srgb, var(--cor-papel) 40%, transparent);
   max-width: 46rem;
   line-height: 1.6;
 }

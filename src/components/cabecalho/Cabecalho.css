@@ -13,7 +13,7 @@
 }
 
 .cabecalho--fixado {
-  background: rgba(244, 241, 234, 0.86);
+  background: color-mix(in srgb, var(--cor-papel) 86%, transparent);
   backdrop-filter: blur(12px);
   border-bottom-color: var(--cor-tinta-12);
 }

@@ -14,17 +14,21 @@ A página deve parecer feita por um estúdio de design, porque o produto vendido
 
 | Token | Valor | Uso |
 |---|---|---|
-| `--cor-papel` | `#F4F1EA` | Fundo base, off-white quente |
-| `--cor-papel-2` | `#EAE5D9` | Faixa alternada (Método, Dúvidas) |
-| `--cor-tinta` | `#14140F` | Texto e superfície escura (Garantia, rodapé) |
+| `--cor-papel` | `#23272B` | Fundo base, cinza grafite |
+| `--cor-papel-2` | `#2B3035` | Faixa alternada (Método, Dúvidas) |
+| `--cor-tinta` | `#EEF1EC` | Texto e superfície clara (Garantia, rodapé) |
 | `--cor-tinta-70/45/20/12` | tinta com alfa | Texto secundário, apoio, bordas, fios |
-| `--cor-acento` | `#C63A17` | **Só o que converte**: CTA, números, ênfase |
+| papel com alfa | `color-mix(in srgb, var(--cor-papel) N%, transparent)` | Texto e fios sobre superfície invertida |
+| `--cor-acento` | `#B8F14A` | **Só o que converte**: CTA, números, ênfase |
 
 **Regra do acento**: se ele estiver em toda parte, não chama atenção em lugar
 nenhum. O vermelhão marca o caminho da conversão e nada mais.
 
-Contraste: tinta sobre papel ≈ 16:1; acento sobre papel ≈ 5.2:1 (usado em texto
-grande, número e traço, nunca em corpo pequeno). Ambos passam WCAG AA.
+Contraste: tinta sobre papel ≈ 13.2:1; acento sobre papel ≈ 11.3:1. Ambos
+passam WCAG AAA. Os tokens são nomeados por papel, não por valor: `papel` é
+sempre superfície e `tinta` é sempre o oposto dela, então quem inverte a
+polaridade (rodapé, cartão em destaque, seção da garantia) continua correto
+sem tocar em componente nenhum.
 
 ## Tipografia
 

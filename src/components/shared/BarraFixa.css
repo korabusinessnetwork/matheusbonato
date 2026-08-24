@@ -4,7 +4,7 @@
   z-index: var(--z-barra-fixa);
   padding: var(--e-3) var(--margem-lateral);
   padding-bottom: calc(var(--e-3) + env(safe-area-inset-bottom, 0px));
-  background: rgba(244, 241, 234, 0.92);
+  background: color-mix(in srgb, var(--cor-papel) 92%, transparent);
   backdrop-filter: blur(12px);
   border-top: var(--fio);
   transform: translateY(120%);

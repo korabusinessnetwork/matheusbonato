@@ -1,9 +1,8 @@
 /*
  * O cardápio de serviços e as opções do formulário de pedido.
  *
- * >>> TODO MATHEUS: os preços abaixo são um ponto de partida de mercado, não uma
- *     decisão sua. Ajuste os três valores antes de publicar. Regra do framework:
- *     precificar pelo RESULTADO entregue, nunca pelo tempo gasto.
+ * Se mexer nos preços, mexa também no "priceRange" do index.html: o JSON-LD
+ * não consegue importar daqui e os dois precisam contar a mesma história.
  */
 
 export const PACOTES = [
@@ -13,7 +12,7 @@ export const PACOTES = [
     nome: 'Landing Page de Conversão',
     promessa: 'Uma página com um objetivo só: virar pedido.',
     para: 'Quem já tem tráfego (Instagram, anúncio, indicação) e precisa transformar visita em conversa.',
-    precoDe: 1497,
+    precoDe: 400,
     prazo: 'no ar em até 7 dias',
     itens: [
       'Uma página, um caminho, zero distração',
@@ -30,7 +29,7 @@ export const PACOTES = [
     nome: 'Site Institucional',
     promessa: 'Seu negócio inteiro explicado, e vendendo em toda página.',
     para: 'Quem tem mais de um serviço, precisa aparecer no Google e ser levado a sério na primeira busca.',
-    precoDe: 2897,
+    precoDe: 1500,
     prazo: 'no ar em até 14 dias',
     destaque: true,
     itens: [
@@ -48,7 +47,7 @@ export const PACOTES = [
     nome: 'Sob Medida',
     promessa: 'Quando o site precisa fazer, não só falar.',
     para: 'Quem precisa de área de cliente, agendamento, catálogo, painel, integração ou automação.',
-    precoDe: 5900,
+    precoDe: 3000,
     prazo: 'prazo fechado no diagnóstico',
     itens: [
       'Tudo do pacote 02',

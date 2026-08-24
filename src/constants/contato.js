@@ -26,7 +26,6 @@ export const MARCA = {
   //     um, prefira um endereço do seu domínio.
   redes: [
     { rotulo: 'Instagram', url: 'https://instagram.com/matheusbonato', usuario: '@matheusbonato' },
-    { rotulo: 'GitHub', url: 'https://github.com/matheusbonato', usuario: 'matheusbonato' },
     { rotulo: 'E-mail', url: '', usuario: 'contato@seudominio.com.br' },
   ],
 }

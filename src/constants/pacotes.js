@@ -99,10 +99,9 @@ export const PRAZOS = [
 ]
 
 export const ORCAMENTOS = [
-  { id: 'ate-1500', rotulo: 'Até R$ 1.500' },
-  { id: '1500-3000', rotulo: 'R$ 1.500 a R$ 3.000' },
-  { id: '3000-6000', rotulo: 'R$ 3.000 a R$ 6.000' },
-  { id: 'acima-6000', rotulo: 'Acima de R$ 6.000' },
+  { id: 'de-400', rotulo: 'A partir de R$ 400' },
+  { id: 'de-1500', rotulo: 'A partir de R$ 1.500' },
+  { id: 'de-3000', rotulo: 'A partir de R$ 3.000' },
   { id: 'nao-sei', rotulo: 'Não sei ainda' },
 ]
 

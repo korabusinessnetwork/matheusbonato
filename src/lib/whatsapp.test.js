@@ -8,7 +8,7 @@ const pedidoCompleto = {
   pacote: 'landing-page',
   objetivo: 'vender',
   prazo: 'urgente',
-  orcamento: '1500-3000',
+  orcamento: 'de-1500',
   contexto: 'Vendo bolo no Instagram e quero parar de responder orçamento na mão.',
 }
 
@@ -20,7 +20,7 @@ describe('montarMensagemPedido', () => {
     expect(mensagem).toContain('Landing Page de Conversão')
     expect(mensagem).toContain('Vender mais / receber pedido')
     expect(mensagem).toContain('O quanto antes')
-    expect(mensagem).toContain('R$ 1.500 a R$ 3.000')
+    expect(mensagem).toContain('A partir de R$ 1.500')
     expect(mensagem).toContain('parar de responder orçamento na mão')
   })
 

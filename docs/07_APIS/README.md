@@ -25,10 +25,10 @@ Oi, Matheus! Vim pela sua página e montei meu pedido.
 
 *Nome:* Ana Ribeiro
 *Negócio / @ / site:* @estudioana
-*O que eu preciso:* Site Institucional (a partir de R$ 2.897)
+*O que eu preciso:* Site Institucional (a partir de R$ 800)
 *Objetivo principal:* Vender mais / receber pedido
 *Prazo:* O quanto antes
-*Orçamento:* R$ 1.500 a R$ 3.000
+*Orçamento:* A partir de R$ 800
 
 *Sobre o projeto:*
 Vendo bolo pelo Instagram e quero parar de responder orçamento na mão.

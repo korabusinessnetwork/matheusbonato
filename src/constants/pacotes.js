@@ -12,7 +12,7 @@ export const PACOTES = [
     nome: 'Landing Page de Conversão',
     promessa: 'Uma página com um objetivo só: virar pedido.',
     para: 'Quem já tem tráfego (Instagram, anúncio, indicação) e precisa transformar visita em conversa.',
-    precoDe: 400,
+    precoDe: 200,
     prazo: 'no ar em até 7 dias',
     itens: [
       'Uma página, um caminho, zero distração',
@@ -29,7 +29,7 @@ export const PACOTES = [
     nome: 'Site Institucional',
     promessa: 'Seu negócio inteiro explicado, e vendendo em toda página.',
     para: 'Quem tem mais de um serviço, precisa aparecer no Google e ser levado a sério na primeira busca.',
-    precoDe: 1500,
+    precoDe: 800,
     prazo: 'no ar em até 14 dias',
     destaque: true,
     itens: [
@@ -47,7 +47,7 @@ export const PACOTES = [
     nome: 'Sob Medida',
     promessa: 'Quando o site precisa fazer, não só falar.',
     para: 'Quem precisa de área de cliente, agendamento, catálogo, painel, integração ou automação.',
-    precoDe: 3000,
+    precoDe: 2000,
     prazo: 'prazo fechado no diagnóstico',
     itens: [
       'Tudo do pacote 02',
@@ -99,9 +99,9 @@ export const PRAZOS = [
 ]
 
 export const ORCAMENTOS = [
-  { id: 'de-400', rotulo: 'A partir de R$ 400' },
-  { id: 'de-1500', rotulo: 'A partir de R$ 1.500' },
-  { id: 'de-3000', rotulo: 'A partir de R$ 3.000' },
+  { id: 'de-200', rotulo: 'A partir de R$ 200' },
+  { id: 'de-800', rotulo: 'A partir de R$ 800' },
+  { id: 'de-2000', rotulo: 'A partir de R$ 2.000' },
   { id: 'nao-sei', rotulo: 'Não sei ainda' },
 ]
 

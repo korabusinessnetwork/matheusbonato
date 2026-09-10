@@ -15,8 +15,8 @@
 
 - [ ] **Trocar o número do WhatsApp** (`VITE_WHATSAPP_NUMERO` no `.env`).
       Enquanto for o de exemplo, o botão abre uma conversa vazia.
-- [ ] **Revisar os três preços** em `src/constants/pacotes.js` (hoje são um ponto
-      de partida de mercado, não uma decisão do dono, ADR-004).
+- [x] **Revisar os três preços** em `src/constants/pacotes.js`. Decididos pelo dono:
+      R$ 200 (Landing Page), R$ 800 (Site Institucional) e R$ 2.000 (Sob Medida).
 - [ ] **Confirmar os anos e marcos** da trajetória (`[CONFIRMAR]` em `conteudo.js`).
 - [ ] Conferir links de redes sociais em `contato.js`.
 - [ ] Decidir se a garantia de prazo (devolução de 100%) fica como está.
